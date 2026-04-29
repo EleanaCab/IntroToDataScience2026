@@ -1,0 +1,6 @@
+---
+title: "What is OSCER?"
+---
+
+The computational resource we will be using for this course will be the OU Supercomputing Center for Education and Research ([OSCER](https://www.ou.edu/oscer)). 
+

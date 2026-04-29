@@ -1,0 +1,16 @@
+{
+  "listingMap": {
+    "assignments.qmd": [
+      "assignments"
+    ],
+    "lecture_slides.qmd": [
+      "lecture_slides"
+    ],
+    "lectures.qmd": [
+      "lectures"
+    ],
+    "resources.qmd": [
+      "resources"
+    ]
+  }
+}

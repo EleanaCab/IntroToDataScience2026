@@ -1,0 +1,82 @@
+---
+title: "Introduction to Bioinformatics Course"
+title-block-banner: true
+---
+
+Welcome! This will be the place to refer to for this class. All lectures, assignments, and projects will be placed here. Grades and adminstrative stuff will be taken care of in Canvas, if you are enrolled in the course. Below is calendar overview of what we will cover in this course and what anticipated lectures we will be going through.
+
+# Course Calendar
+```{=html}
+<table>
+  <thead>
+    <tr>
+      <th colspan="5" style="text-align: center;">June</th>
+    </tr>
+    <tr>
+      <th style="text-align: center">Mon</th>
+      <th style="text-align: center">Tue</th>
+      <th style="text-align: center">Wed</th>
+      <th style="text-align: center">Thu</th>
+      <th style="text-align: center">Fri</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td>2<br>Working in OSCER and BASH</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5<br>16S rRNA Microbiome Analysis</td>
+    <td>6</td>
+    </tr>
+    <tr>
+    <td>9<br>16S rRNA Microbiome Analysis</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12<br>Bulk RNA-seq and Consensus Pathway Analysis</td>
+    <td>13</td>
+    </tr>
+    <tr>
+    <td>16<br>Introduction to Data Science</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19<br>Course Project Help Session</td>
+    <td>20</td>
+    </tr>
+    <tr>
+    <td>23<br>In-class Presentations</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26<br>In-class Presentations</td>
+    <td>27</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+# Course Information
+```{=html}
+<table border="0">
+  <thead>
+  </thead>
+  <tbody>
+    <tr>
+    <td><b>Course Staff</b></td>
+    <td>Dave Dyer<br>Professor Emeritus,<br>Department of Microbiology and Immunology</td>
+    <td>Eleana Cabello<br>Bioinformatics Analyst for OK-INBRE,<br>Department of Microbiology and Immunology</td>
+    <td>Hande Acar<br>Sr Bioinformatics Analyst for IRCF</td>
+    </tr>
+    <tr>
+    <td><b>Lecture Times</b></td>
+    <td>Mon and Thu<br>10:00 - 11:20am</td>
+    </tr>
+    <tr>
+    <td><b>Location</b></td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td><b>Office Hours</b></td>
+    <td>TBD</td>
+    </tr>
+  </tbody>
+</table>
+```

@@ -1,0 +1,19 @@
+---
+title: "Lecture Slides"
+listing:
+  id: lecture-slide-listings
+  contents: lecture_slides
+  exclude:
+    title: "Template"
+  sort: "date asc"
+  type: table
+  categories: false
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: false
+date-format: "MM-DD-YYYY"
+---
+
+::: {#lecture-slide-listings}
+:::
