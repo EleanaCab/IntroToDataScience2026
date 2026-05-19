@@ -1,0 +1,42 @@
+---
+title: "What is OSCER?"
+date: 06/02/2026
+---
+
+The computational resource we will be using for this course will be the OU Supercomputing Center for Education and Research ([OSCER](https://www.ou.edu/oscer)). 
+
+# OSCER Account Creation and Management
+
+## Signing Up for an Account 
+
+Anyone on a project where the instructor or at least one Principal or Co-Principal Investigator is a faculty or staff member at an Oklahoma institution is elgible for an account. 
+
+Please visit the following link, it will take you to the page to sign up for an account: [ACCOUNT SIGN UP](https://www.ou.edu/oscer/getting-started/new-account)
+
+Follow step one and wait for confirmation of approval for your account before proceding to steps 2-3.
+
+When asked to list a PI, if you are part of a lab please put your PI's name. They will recieve and email about your account creations.
+
+## Changing or Forgetting Password 
+
+If you forget your password please visit the following link and follow the steps outlined: [CHANGE PASSWORD](https://www.ou.edu/oscer/getting-started/change-password)
+
+# Acessing OSCER Account
+
+## Logging on using MobaXterm - Windows
+
+If you have a Windows system, please follow the steps on OSCER's page to install **MobaXterm** linked here under the Windows (a) MobaxTerm section: [OSCER's Getting Started Page](https://www.ou.edu/oscer/getting-started/machine-access#mobaxterm)
+
+Once the terminal window appears, please enter your credentials correctly. You will see a wall of text with OSCER info and finally at the end a line indicating your logged on to an OSCER login node: `(base) [USER@sooner# ~]$`
+
+## Logging on through Terminal - MacOS and Linux
+
+If you have a mac or linux system, to log into OSCER please have your username and password on hand. On your computer open up the terminal application. Once on the terminal, please type in: `ssh USERNAME@sooner.oscer.ou.edu` 
+
+Afterwards it will prompt you to type in your password. Start typing it in, do not worry if it does not appear on screen that you are typing this is normal. after you have typed it in click your Enter key. 
+
+If you entered your credentials correctly, you will see a wall of text with OSCER info and finally at the end a line indicating your logged on to an OSCER login node: `(base) [USER@sooner# ~]$`
+
+At the end of this process, you should be logged into a sooner log in node on OSCER!
+
+{{< video resource_oscer_images/logging_into_oscer.mov >}}

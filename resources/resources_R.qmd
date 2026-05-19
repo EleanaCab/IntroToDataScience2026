@@ -1,0 +1,54 @@
+---
+title: "Programming in R for this Course"
+date: 06/05/2026
+---
+
+## Installing R and RStudio
+
+Please download the version of R appropriate for your device and OS system:
+  
+  - [Windows Distribution Page](https://cran.r-project.org/index.html)
+  - [MacOS Distribution Page](https://cran.r-project.org/bin/macosx/)
+  - [Linux Distribution Page](https://cran.r-project.org/index.html)
+  
+
+After installing R please install RStudio from the following link: 
+
+  - [Posit Website](https://posit.co/download/rstudio-desktop)
+
+## Packages for this Course
+
+We will be using R packages from both Comprehensive R Archive Network (Cran) the central repository for R packages and Bioconductor another repository that hosts thousands of packages specifically made for biomedical research.
+
+### Cran Packages
+
+Below is the code needed to install the CRAN packages needed for this course and import them into any script:
+
+```{.r}
+install.packages(c("tidyverse", "ggplot2", "pheatmap"))
+```
+
+```{.r}
+Library(tidyverse)
+Library(ggplot2) 
+Library(pheatmap)
+```
+
+### Bioconductor Packages
+
+Bioconductor packages work a litte differently. First the bioconductor manager package **BiocManager** must be installed first and then using the methods of that package you can install other Bioconductor package like DESeq2: 
+
+```{.r}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+    
+BiocManager::install("DESeq2")
+```
+
+These packages can be imported into a script/workspace like typical CRAN packages after being installed through BiocManager:
+
+```{.r}
+Library(Deseq2)
+```
+
+

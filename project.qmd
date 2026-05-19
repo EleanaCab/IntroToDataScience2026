@@ -2,5 +2,41 @@
 title: "Course Project"
 author: 
   - name: Eleana Cabello
-    affiliation: Department of Microbiology and Immunology, OUHSC
+    affiliation: Department of Microbiology and Immunology, OUHC
+draft: False
 ---
+
+# Background
+
+Throughout this summer course, we have primarily covered core data science concepts and how to perform a bulk RNA-seq analysis using the OUHC supercomputer. This experience has allowed you to become familiar not only with this specific type of analysis, but also with important supporting skills such as working with bioinformatics software, understanding common bioinformatics file formats, and navigating the command line terminal. The purpose of this course project is to give you an opportunity to apply what you have learned over the past few weeks using either your own dataset or a dataset assigned to you. 
+ 
+# Project Guidelines
+
+Below is the general outline of the steps you need to do for this project:
+
+1. Import data into your OSCER workspace, it cna be your own or we can assign data to you
+
+2. Perform a quality check on your fastq files
+
+3. Align your fastq read to the refrence genome for your dataset using HISAT2
+
+4. Produce a count matrix using the program featureCounts and the GFF file of your reference genome
+
+5. Perform differential expression analysis using the R Bioconductor Package DeSeq2 and the count matrix you created in the previous steps
+
+# Submission
+
+You will need to submit your presentation ahead of time on Canvas. Otherwise everything else on the rubric you will need to cover in your presentation. 
+
+Please show the following during your presentation:
+
+- An **organized** OSCER workspace
+- An **organized and annotated** BASH script or scripts used to complete the project
+- R Workspace used to complete the analysis with **dedicated folders and well named files**
+- A walkthrough of the Differential Expression Analysis Document with explanation for each step
+  - Comparing raw counts and normalized counts
+  - Principal Components Analysis
+  - Creation of DESeq2 Object using count matrix and sample metadata
+  - Volcano Plot of results
+  - Heatmap of results
+- Summary of key findings from the analysis

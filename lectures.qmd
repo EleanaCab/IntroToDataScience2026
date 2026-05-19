@@ -3,13 +3,12 @@ title: "Lectures"
 listing:
   id: lecture-listings
   contents: lectures
-  exclude:
-    title: "Template"
   sort: "date asc"
   type: table
   categories: false
   sort-ui: false
   filter-ui: false
+  fields: [date, title, author]
 page-layout: full
 title-block-banner: false
 date-format: "MM-DD-YYYY"

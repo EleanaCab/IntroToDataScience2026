@@ -1,9 +1,28 @@
 ---
-title: "OSCER and BASH, BASH and OSCER"
+title: "Working on OSCER and Using BASH"
 author: 
   - name: Eleana Cabello
-date: 06/02/2025
+date: 06/05/2026
+draft: False
 ---
+
+# Prerequisites
+
+Please have the following ready before class:
+
+- Have your OSCER credentials on hand
+- Be able to access you OSCER account through Terminal or MobaXterm
+
+# Learning objectives
+
+At the end of this lesson you will:
+
+- TBD
+- TBD
+- TBD
+
+# Lecture
+
 # Setting the Stage
 
 ![](../images/lecture_1/local_terminal.png){width=700 fig-align=center}
@@ -15,7 +34,7 @@ date: 06/02/2025
 - **Command** - BASH command to accomplish a task i.e. creating file, removing file, etc. 
 - **Command Flag** - Modifications to a command to consider
 
-# Logging into OSCER Guest Account
+# Logging into OSCER Account
 
 Good news! There is nothing you need to do to setup an account. A guest account has already been made for you by us for FREE! 
 
@@ -162,33 +181,5 @@ Working on an HPC means we have to communicate with it using its language which 
 To use a bioinformatics program we will need to submit jobs through a Bash script. In a sense you will have to anticipate what will need to be done in this script. For example if you want to store your results in a seperate folder than you are working in you will need to create that folder and set the path for those results. Below is an example of what each script will need at the beginning: 
 
 ```{.bash}
-#!/bin/bash
-#SBATCH --partition=ircfhp
-#SBATCH --nodelist=c923
-#SBATCH --container=el9hw
-#SBATCH --nodes=1
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=10
-#SBATCH --mem=30G
-#SBATCH --chdir=/ecabello
-#SBATCH --output=qc_%A_%a_stdout.txt
-#SBATCH --error=qc_%A_%a_stderr.txt
-#SBATCH --mail-user=eleana-cabello@ouhsc.edu
-#SBATCH --mail-type=ALL
 
-
-#==============================================================================
-# BASH Strict mode (i.e. "fail fast" to reduce hard-to-find bugs)
-set -e          # EXIT the script if any command returns non-zero exit status.
-set -E          # Make ERR trapping work inside functions too.
-set -u          # Variables must be pre-defined before using them.
-set -o pipefail # If a pipe fails, returns the error code for the failed pipe
-                #  even if it isn't the last command in a series of pipes.
-#==============================================================================
-
-module load fastqc
-module load multiqc
 ```
-
-# Lecture 1 Assignment
-[Lecture 1 Homework](https://eleanacab.github.io/ITB_2025/assignments/assignment_1.html){target="_blank"}

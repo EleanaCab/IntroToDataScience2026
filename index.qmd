@@ -1,53 +1,55 @@
 ---
-title: "Introduction to Bioinformatics Course"
+title: "MI6401 Introduction to Data Science Course"
 title-block-banner: true
 ---
 
 Welcome! This will be the place to refer to for this class. All lectures, assignments, and projects will be placed here. Grades and adminstrative stuff will be taken care of in Canvas, if you are enrolled in the course. Below is calendar overview of what we will cover in this course and what anticipated lectures we will be going through.
 
-# Course Calendar
+# Schedule 
 ```{=html}
-<table>
+<table style="width:100%; margin">
+  <colgroup>
+       <col span="1" style="width: 20%;">
+       <col span="1" style="width: 80%;">
+  </colgroup>
   <thead>
-    <tr>
-      <th colspan="5" style="text-align: center;">June</th>
-    </tr>
-    <tr>
-      <th style="text-align: center">Mon</th>
-      <th style="text-align: center">Tue</th>
-      <th style="text-align: center">Wed</th>
-      <th style="text-align: center">Thu</th>
-      <th style="text-align: center">Fri</th>
+  <tr>
+    <th><b>Date</b></th>
+    <th><b>Topic</b></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-    <td>2<br>Working in OSCER and BASH</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5<br>16S rRNA Microbiome Analysis</td>
-    <td>6</td>
+    <td>06/02</td>
+    <td><a href=https://eleanacab.github.io/IntroToDataScience2026/lectures/lecture_1_intro_data_science.html> <b> Introduction to Data Science</b> - Courtney Montgomery️ </a></td>
     </tr>
     <tr>
-    <td>9<br>16S rRNA Microbiome Analysis</td>
-    <td>10</td>
-    <td>11</td>
-    <td>12<br>Bulk RNA-seq and Consensus Pathway Analysis</td>
-    <td>13</td>
+    <td>06/05</td>
+    <td><a href=https://eleanacab.github.io/IntroToDataScience2026/lectures/lecture_2_oscer_bash.html> <b> Working on OSCER and Using BASH</b> - ️Eleana Cabello </a></td>
     </tr>
     <tr>
-    <td>16<br>Introduction to Data Science</td>
-    <td>17</td>
-    <td>18</td>
-    <td>19<br>Course Project Help Session</td>
-    <td>20</td>
+    <td>06/09</td>
+    <td><a href=https://eleanacab.github.io/IntroToDataScience2026/lectures/lecture_3_bulk_rna_seq_1.html> <b> Bulk RNA-Seq I</b> - ️Eleana Cabello </a></td>
     </tr>
     <tr>
-    <td>23<br>In-class Presentations</td>
-    <td>24</td>
-    <td>25</td>
-    <td>26<br>In-class Presentations</td>
-    <td>27</td>
+    <td>06/12</td>
+    <td><a href=https://eleanacab.github.io/IntroToDataScience2026/lectures/lecture_4_bulk_rna_seq_2.html> <b> Bulk RNA-Seq II</b> -  TBD </a></td>
+    </tr>
+    <tr>
+    <td>06/16</td>
+    <td><b>Help Session I</b></td>
+    </tr>
+    <tr>
+    <td>06/19</td>
+    <td><b>Help Session II</b></td>
+    </tr>
+    <tr>
+    <td>06/23</td>
+    <td><a href=https://eleanacab.github.io/IntroToDataScience2026/lectures/lecture_5_pathway_analysis.html> <b> Pathway Analysis with IPA</b> -  TBD </a></td>
+    </tr>
+    <tr>
+    <td>06/26</td>
+    <td><b>Course Project Presentations</b></td>
     </tr>
   </tbody>
 </table>
@@ -60,18 +62,12 @@ Welcome! This will be the place to refer to for this class. All lectures, assign
   </thead>
   <tbody>
     <tr>
-    <td><b>Course Staff</b></td>
-    <td>Dave Dyer<br>Professor Emeritus,<br>Department of Microbiology and Immunology</td>
-    <td>Eleana Cabello<br>Bioinformatics Analyst for OK-INBRE,<br>Department of Microbiology and Immunology</td>
-    <td>Hande Acar<br>Sr Bioinformatics Analyst for IRCF</td>
-    </tr>
-    <tr>
     <td><b>Lecture Times</b></td>
-    <td>Mon and Thu<br>10:00 - 11:20am</td>
+    <td>TUE and FRI 10:00 - 11:20AM</td>
     </tr>
     <tr>
     <td><b>Location</b></td>
-    <td>TBD</td>
+    <td>OMRF Training Room</td>
     </tr>
     <tr>
     <td><b>Office Hours</b></td>

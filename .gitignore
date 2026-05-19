@@ -4,3 +4,6 @@
 .Ruserdata
 .DS
 .quarto
+/.quarto/
+archive_lectures
+.DS_store
