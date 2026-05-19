@@ -119,12 +119,7 @@ rm -r SOME_DIR    # Remove Directory
 mv ONE_DIR TWO_DIR # Move directory to new directory 
 ```
 
-### Creating, Deleting, Copying, and Moving Files
-
-```{.bash}
-touch SOME_FILE.txt                   # Create new file
-touch SOME_FILE.txt SOME_FILE.txt     # Create several new files
-```
+### Deleting, Copying, and Moving Files
 
 ```{.bash}
 rm foo.txt                        # Remove file
@@ -161,17 +156,11 @@ CMD SOME_FILE.txt 1> stdout.txt           # Redirect the standard output to a fi
 CMD SOME_FILE.txt 2> stderror.txt        # Redirect the standard error output to a file
 ```
 
-## File Editing
+## In Line File Editor
 
 ```{.bash}
 nano                    # Opens text editor to create new file
 nano file.txt            # Opens file in text editor
-```
-
-## Pattern Searching
-
-```{.bash}
-grep "some-string" SOME_FILE.txt    # Grabs lines in file that contain the string pattern
 ```
 
 # Batch Scripting and Programs on OSCER
@@ -185,13 +174,42 @@ To use a bioinformatics program we will need to submit jobs through a Bash scrip
 #
 #SBATCH --partition=normal
 #SBATCH --ntasks=1
-#SBATCH --mem=1024
+#SBATCH --mem=1G
 #SBATCH --output=jobname_%J_stdout.txt
 #SBATCH --error=jobname_%J_stderr.txt
 #SBATCH --time=12:00:00
 #SBATCH --job-name=jobname
-#SBATCH --mail-user=youremailaddress@yourinstitution.edu
+#SBATCH --mail-user=youremailaddress@ou.edu
 #SBATCH --mail-type=ALL
 #SBATCH --chdir=/home/$USER/working_directory
 #
 ```
+
+### Exercise 
+
+```{.bash}
+#!/bin/bash
+#SBATCH --partition=normal
+#SBATCH --ntasks=1
+#SBATCH --mem=1G
+#SBATCH --output=jobname_%J_stdout.txt
+#SBATCH --error=jobname_%J_stderr.txt
+#SBATCH --time=12:00:00
+#SBATCH --job-name=jobname
+#SBATCH --mail-user=youremailaddress@ou.edu
+#SBATCH --mail-type=ALL
+#SBATCH --chdir=/home/$USER/working_directory
+
+#==============================================================================
+# BASH Strict mode (i.e. "fail fast" to reduce hard-to-find bugs)
+set -e          # EXIT the script if any command returns non-zero exit status.
+set -E          # Make ERR trapping work inside functions too.
+set -u          # Variables must be pre-defined before using them.
+set -o pipefail # If a pipe fails, returns the error code for the failed pipe
+                #  even if it isn't the last command in a series of pipes.
+#==============================================================================
+
+echo "Hello World!" > helloWorld.txt
+
+```
+

@@ -3,6 +3,10 @@ title: "MI6401 Introduction to Data Science Course"
 title-block-banner: true
 ---
 
+![](okinbre_logo.png)
+<br>
+<br>
+
 Welcome! This will be the place to refer to for this class. All lectures, assignments, and projects will be placed here. Grades and adminstrative stuff will be taken care of in Canvas, if you are enrolled in the course. Below is calendar overview of what we will cover in this course and what anticipated lectures we will be going through.
 
 # Schedule 
@@ -71,7 +75,7 @@ Welcome! This will be the place to refer to for this class. All lectures, assign
     </tr>
     <tr>
     <td><b>Office Hours</b></td>
-    <td>TBD</td>
+    <td>By Appointment</td>
     </tr>
   </tbody>
 </table>
