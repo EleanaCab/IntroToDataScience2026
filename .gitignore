@@ -7,3 +7,4 @@
 /.quarto/
 archive_lectures
 .DS_store
+.RProj

@@ -181,5 +181,17 @@ Working on an HPC means we have to communicate with it using its language which 
 To use a bioinformatics program we will need to submit jobs through a Bash script. In a sense you will have to anticipate what will need to be done in this script. For example if you want to store your results in a seperate folder than you are working in you will need to create that folder and set the path for those results. Below is an example of what each script will need at the beginning: 
 
 ```{.bash}
-
+#!/bin/bash
+#
+#SBATCH --partition=normal
+#SBATCH --ntasks=1
+#SBATCH --mem=1024
+#SBATCH --output=jobname_%J_stdout.txt
+#SBATCH --error=jobname_%J_stderr.txt
+#SBATCH --time=12:00:00
+#SBATCH --job-name=jobname
+#SBATCH --mail-user=youremailaddress@yourinstitution.edu
+#SBATCH --mail-type=ALL
+#SBATCH --chdir=/home/$USER/working_directory
+#
 ```
