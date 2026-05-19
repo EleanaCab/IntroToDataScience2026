@@ -1,31 +1,17 @@
 [
   {
-    "listing": "/resources.html",
-    "items": [
-      "/resources/resource_1_oscer.html"
-    ]
-  },
-  {
-    "listing": "/lecture_slides.html",
-    "items": [
-      "/lecture_slides/lecture_1_slides.html"
-    ]
-  },
-  {
     "listing": "/lectures.html",
     "items": [
-      "/lectures/lecture_1.html",
-      "/lectures/lecture_2.html",
-      "/lectures/lecture_3.html",
-      "/lectures/lecture_4.html",
-      "/lectures/lecture_5.html",
-      "/lectures/lecture_6.html"
+      "/lectures/lecture_1_intro_data_science.html",
+      "/lectures/lecture_2_oscer_bash.html",
+      "/lectures/lecture_3_bulk_rna_seq_1.html"
     ]
   },
   {
-    "listing": "/assignments.html",
+    "listing": "/resources.html",
     "items": [
-      "/assignments/assignment_1.html"
+      "/resources/resource_oscer.html",
+      "/resources/resources_R.html"
     ]
   }
 ]

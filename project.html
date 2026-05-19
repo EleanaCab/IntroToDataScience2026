@@ -8,7 +8,7 @@
 
 <meta name="author" content="Eleana Cabello">
 
-<title>Course Project – ITB 2025</title>
+<title>Course Project</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-59b43b4f11b40101af6b03debfbc04af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-414a04fae7b194d7d79f6939640f1863.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,11 +81,6 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">ITB 2025</span>
-    </a>
-  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -101,16 +96,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./lectures.html"> <i class="bi bi-book" role="img">
 </i> 
 <span class="menu-text">Lectures</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./lecture_slides.html"> <i class="bi bi-display" role="img">
-</i> 
-<span class="menu-text">Slides</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./assignments.html"> <i class="bi bi-pencil" role="img">
-</i> 
-<span class="menu-text">Assignments</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./project.html" aria-current="page"> <i class="bi bi-clipboard2" role="img">
@@ -133,8 +118,16 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#project-guidelines" id="toc-project-guidelines" class="nav-link" data-scroll-target="#project-guidelines">Project Guidelines</a></li>
+  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -154,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            Department of Microbiology and Immunology, OUHSC
+            Department of Microbiology and Immunology, OUHC
           </p>
       </div>
   </div>
@@ -171,8 +164,42 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="background" class="level1">
+<h1>Background</h1>
+<p>Throughout this summer course, we have primarily covered core data science concepts and how to perform a bulk RNA-seq analysis using the OUHC supercomputer. This experience has allowed you to become familiar not only with this specific type of analysis, but also with important supporting skills such as working with bioinformatics software, understanding common bioinformatics file formats, and navigating the command line terminal. The purpose of this course project is to give you an opportunity to apply what you have learned over the past few weeks using either your own dataset or a dataset assigned to you.</p>
+</section>
+<section id="project-guidelines" class="level1">
+<h1>Project Guidelines</h1>
+<p>Below is the general outline of the steps you need to do for this project:</p>
+<ol type="1">
+<li><p>Import data into your OSCER workspace, it cna be your own or we can assign data to you</p></li>
+<li><p>Perform a quality check on your fastq files</p></li>
+<li><p>Align your fastq read to the refrence genome for your dataset using HISAT2</p></li>
+<li><p>Produce a count matrix using the program featureCounts and the GFF file of your reference genome</p></li>
+<li><p>Perform differential expression analysis using the R Bioconductor Package DeSeq2 and the count matrix you created in the previous steps</p></li>
+</ol>
+</section>
+<section id="submission" class="level1">
+<h1>Submission</h1>
+<p>You will need to submit your presentation ahead of time on Canvas. Otherwise everything else on the rubric you will need to cover in your presentation.</p>
+<p>Please show the following during your presentation:</p>
+<ul>
+<li>An <strong>organized</strong> OSCER workspace</li>
+<li>An <strong>organized and annotated</strong> BASH script or scripts used to complete the project</li>
+<li>R Workspace used to complete the analysis with <strong>dedicated folders and well named files</strong></li>
+<li>A walkthrough of the Differential Expression Analysis Document with explanation for each step
+<ul>
+<li>Comparing raw counts and normalized counts</li>
+<li>Principal Components Analysis</li>
+<li>Creation of DESeq2 Object using count matrix and sample metadata</li>
+<li>Volcano Plot of results</li>
+<li>Heatmap of results</li>
+</ul></li>
+<li>Summary of key findings from the analysis</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

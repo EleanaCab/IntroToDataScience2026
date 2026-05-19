@@ -1,219 +1,135 @@
 [
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
+    "objectID": "lectures.html",
+    "href": "lectures.html",
+    "title": "Lectures",
     "section": "",
-    "text": "Title\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nWhat is OSCER?\n\n\n \n\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n06-02-2026\n\n\nIntroduction to Data Science\n\n\nCourtney Montgomery\n\n\n\n\n\n\n06-05-2026\n\n\nWorking on OSCER and Using BASH\n\n\nEleana Cabello\n\n\n\n\n\n\n06-09-2026\n\n\nBulk RNA-Seq I\n\n\nEleana Cabello\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "lecture_slides.html",
-    "href": "lecture_slides.html",
-    "title": "Lecture Slides",
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Course Project",
     "section": "",
-    "text": "Date\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n06-30-2025\n\n\nLecture 1\n\n\n \n\n\n\n\n\n\nNo matching items"
+    "text": "Background\nThroughout this summer course, we have primarily covered core data science concepts and how to perform a bulk RNA-seq analysis using the OUHC supercomputer. This experience has allowed you to become familiar not only with this specific type of analysis, but also with important supporting skills such as working with bioinformatics software, understanding common bioinformatics file formats, and navigating the command line terminal. The purpose of this course project is to give you an opportunity to apply what you have learned over the past few weeks using either your own dataset or a dataset assigned to you.\n\n\nProject Guidelines\nBelow is the general outline of the steps you need to do for this project:\n\nImport data into your OSCER workspace, it cna be your own or we can assign data to you\nPerform a quality check on your fastq files\nAlign your fastq read to the refrence genome for your dataset using HISAT2\nProduce a count matrix using the program featureCounts and the GFF file of your reference genome\nPerform differential expression analysis using the R Bioconductor Package DeSeq2 and the count matrix you created in the previous steps\n\n\n\nSubmission\nYou will need to submit your presentation ahead of time on Canvas. Otherwise everything else on the rubric you will need to cover in your presentation.\nPlease show the following during your presentation:\n\nAn organized OSCER workspace\nAn organized and annotated BASH script or scripts used to complete the project\nR Workspace used to complete the analysis with dedicated folders and well named files\nA walkthrough of the Differential Expression Analysis Document with explanation for each step\n\nComparing raw counts and normalized counts\nPrincipal Components Analysis\nCreation of DESeq2 Object using count matrix and sample metadata\nVolcano Plot of results\nHeatmap of results\n\nSummary of key findings from the analysis"
   },
   {
-    "objectID": "assignments/assignment_1.html",
-    "href": "assignments/assignment_1.html",
-    "title": "Quality Check of FASTQ Files on OSCER",
+    "objectID": "lectures/lecture_1_intro_data_science.html",
+    "href": "lectures/lecture_1_intro_data_science.html",
+    "title": "Introduction to Data Science",
     "section": "",
-    "text": "The FASTQ file format is the defacto format for unmapped sequence reads generated from next-generation sequencing technologies.\nThe image belows shows the structure for one read entry in a FASTQ file, its important to note these files will have a million reads meaning millions of entries repeating this same structure:\n\n\n\n\n\nEach entry can be broken down to four lines. Line 1 will always start with the @ symbol followed by sequence identifiers like instrument ID, run number, flow cell ID, etc. Line 2 will be the sequence itself. Line 3 will always start with the + symbol and on occasion be followed by the same information on line 1. It acts as a seperator between lines 2 and 4. Line 4 will contain the quality score for each nucleotide in the sequnce of Line 2, encoded in ASCII characters.\n\n\n\n\n\nWhile reads are getting sequenced in a sequencer, quality predictor values are being created for each base call determined by the light signal emitted of each base, sign-to-noise ratio, and other factors determined by the machine. These Values are then used to calculate a Phred (Q) Score that takes into account the probability of a base call being incorrect and gives a prediction on probability of an error occuring in the base calling by the machine. The higher the Q-Score the less likely a base call is incorrect. To simplify this information to add to FASTQ files, an ASCII character is used and found by adding 33 to the Q-Score. The summed number and the ASCII chart is then used to find a character to allocate to the quality of each base.\n\n\n\n\n\n\n\n\n\n\n\nNoteSequencing Accuracy Resources\n\n\n\n\n\n\nIlluminia Measuring Sequencing Accuracy\nIlluminia Understanding Illumina Quality Scores"
+    "text": "Prerequisites\nPlease have the following ready before class:\n\nA confirmtion email for your OSCER account\nHave your OSCER credentials on hand\nHave R and RStudio installed on your laptop\n\n\n\nLearning objectives\nAt the end of this lesson you will:\n\nTBD\nTBD\nTBD\n\n\n\nLecture Slides"
   },
   {
-    "objectID": "assignments/assignment_1.html#fastqc",
-    "href": "assignments/assignment_1.html#fastqc",
-    "title": "Quality Check of FASTQ Files on OSCER",
-    "section": "FastQC",
-    "text": "FastQC\nFastQC is a program that allows you to run a quick quality check on a fastq file (.fastq or .fastq.gz). To run this program store all fastq files in one directory. Then pass that directory to the FastQC command when running it through the terminal.\nLet’s say you stored all your files in a directory called raw_data and you want to store results in a new directory called fastqc_results, you’re command would look like:\nfastqc -o fastqc_results raw_data/*.fastq.gz\nEach fastq file processed will have a resulting _fastqc.html and _fastqc.zip. Below are examples of the results stored in a _fastqc.html file:\n\n\n\n\n\nThe basic statistics section provides a quick description of the file including name, total number of sequences, total bases, range of sequence lengths, and GC percentage."
+    "objectID": "lectures/lecture_2_oscer_bash.html",
+    "href": "lectures/lecture_2_oscer_bash.html",
+    "title": "Working on OSCER and Using BASH",
+    "section": "",
+    "text": "Please have the following ready before class:\n\nHave your OSCER credentials on hand\nBe able to access you OSCER account through Terminal or MobaXterm"
   },
   {
-    "objectID": "assignments/assignment_1.html#multiqc",
-    "href": "assignments/assignment_1.html#multiqc",
-    "title": "Quality Check of FASTQ Files on OSCER",
-    "section": "MultiQC",
-    "text": "MultiQC\nMultiQC compiles FastQC results together into one HTML file for easier comparison of samples.\nTo use MultiQC, the command needs a directory to output the results and the directory to search for the FastQC results to compile together:\nmultiqc -o multiqc_results raw_data/*fastqc.zip"
+    "objectID": "lectures/lecture_2_oscer_bash.html#piping",
+    "href": "lectures/lecture_2_oscer_bash.html#piping",
+    "title": "Working on OSCER and Using BASH",
+    "section": "Piping",
+    "text": "Piping\nCMD1 SOME_FILE.txt | CMD2         # Structure\nls SOME_DIR | grep \"R1\"           # Example"
   },
   {
-    "objectID": "resources/resource_1_oscer.html",
-    "href": "resources/resource_1_oscer.html",
+    "objectID": "lectures/lecture_2_oscer_bash.html#standard-output",
+    "href": "lectures/lecture_2_oscer_bash.html#standard-output",
+    "title": "Working on OSCER and Using BASH",
+    "section": "Standard Output",
+    "text": "Standard Output\necho \"some string\"                # Print to screen\nCMD SOME_FILE.txt &gt; NEW_FILE.txt            # Overwrite file with output\nCMD SOME_FILE.txt &gt;&gt; ADD_TO_EXISTING.txt    # Take output and add output to existing content in file\nCMD SOME_FILE.txt 1&gt; stdout.txt           # Redirect the standard output to a file\nCMD SOME_FILE.txt 2&gt; stderror.txt        # Redirect the standard error output to a file"
+  },
+  {
+    "objectID": "lectures/lecture_2_oscer_bash.html#file-editing",
+    "href": "lectures/lecture_2_oscer_bash.html#file-editing",
+    "title": "Working on OSCER and Using BASH",
+    "section": "File Editing",
+    "text": "File Editing\nnano                    # Opens text editor to create new file\nnano file.txt            # Opens file in text editor"
+  },
+  {
+    "objectID": "lectures/lecture_2_oscer_bash.html#pattern-searching",
+    "href": "lectures/lecture_2_oscer_bash.html#pattern-searching",
+    "title": "Working on OSCER and Using BASH",
+    "section": "Pattern Searching",
+    "text": "Pattern Searching\ngrep \"some-string\" SOME_FILE.txt    # Grabs lines in file that contain the string pattern"
+  },
+  {
+    "objectID": "resources/resource_oscer.html",
+    "href": "resources/resource_oscer.html",
     "title": "What is OSCER?",
     "section": "",
     "text": "The computational resource we will be using for this course will be the OU Supercomputing Center for Education and Research (OSCER)."
   },
   {
-    "objectID": "lectures/lecture_2.html#file-management-and-making-manifest-for-importing",
-    "href": "lectures/lecture_2.html#file-management-and-making-manifest-for-importing",
-    "title": "16S rRNA Microbiome Analysis - Part 1",
-    "section": "0-File Management and Making Manifest for Importing",
-    "text": "0-File Management and Making Manifest for Importing\nqiime_out_dir=\"output\"\nmkdir $qiime_out_dir\nqiime metadata tabulate \\\n  --m-input-file sample-metadata.tsv \\\n  --o-visualization sample-metadata-viz.qzv"
+    "objectID": "resources/resource_oscer.html#signing-up-for-an-account",
+    "href": "resources/resource_oscer.html#signing-up-for-an-account",
+    "title": "What is OSCER?",
+    "section": "Signing Up for an Account",
+    "text": "Signing Up for an Account\nAnyone on a project where the instructor or at least one Principal or Co-Principal Investigator is a faculty or staff member at an Oklahoma institution is elgible for an account.\nPlease visit the following link, it will take you to the page to sign up for an account: ACCOUNT SIGN UP\nFollow step one and wait for confirmation of approval for your account before proceding to steps 2-3.\nWhen asked to list a PI, if you are part of a lab please put your PI’s name. They will recieve and email about your account creations."
   },
   {
-    "objectID": "lectures/lecture_2.html#importing-sequencing-data-to-qiime-object",
-    "href": "lectures/lecture_2.html#importing-sequencing-data-to-qiime-object",
-    "title": "16S rRNA Microbiome Analysis - Part 1",
-    "section": "1-Importing Sequencing Data to QIIME Object",
-    "text": "1-Importing Sequencing Data to QIIME Object\nimport_seqs_dir=\"output/1_imported_seqs\"\nmanifest_file= \"\"\n\nmkdir $import_seqs_dir\n\nqiime tools import \\\n    --type 'SampleData[PairedEndSequencesWithQuality]' \\\n    --input-path $manifest_file \\\n    --input-format PairedEndFastqManifestPhred33V2 \\\n    --output-path $import_seqs_dir/demux-pairedend.qza\n\nqiime demux summarize \\\n    --i-data $import_seqs_dir/demux-pairedend.qza \\\n    --o-visualization $import_seqs_dir/demux-pairedend.qzv"
+    "objectID": "resources/resource_oscer.html#changing-or-forgetting-password",
+    "href": "resources/resource_oscer.html#changing-or-forgetting-password",
+    "title": "What is OSCER?",
+    "section": "Changing or Forgetting Password",
+    "text": "Changing or Forgetting Password\nIf you forget your password please visit the following link and follow the steps outlined: CHANGE PASSWORD"
   },
   {
-    "objectID": "lectures/lecture_2.html#quality-control-of-sequences",
-    "href": "lectures/lecture_2.html#quality-control-of-sequences",
-    "title": "16S rRNA Microbiome Analysis - Part 1",
-    "section": "2-Quality Control of Sequences",
-    "text": "2-Quality Control of Sequences\ninput_seqs=\"output/1_imported_seqs/demux-pairedend.qza\"\nf_primer=\"\"\nr_primer=\"\"\nerror_rate=0.1\nmin_length=100\nnum_cores=22\n\ntrimmed_dir=\"output/2_trimmed_seqs\"\nmkdir $trimmed_dir\n\nqiime cutadapt trim-paired \\\n    --i-demultiplexed-sequences $input_seqs \\\n    --p-cores $num_cores \\\n    --p-front-f $f_primer \\\n    --p-front-r $r_primer \\\n    --p-error-rate $error_rate \\\n    --p-minimum-length $min_length \\\n    --o-trimmed-sequences $trimmed_dir/trimmed-demux-pairedend.qza \\\n    --verbose \\\n  &&gt; $trimmed_dir/trimmed.log \n  \nqiime demux summarize \\\n    --i-data $trimmed_dir/trimmed-demux-pairedend.qza \\\n    --o-visualization $trimmed_dir/trimmed-demux-pairedend.qzv"
+    "objectID": "resources/resource_oscer.html#logging-on-using-mobaxterm---windows",
+    "href": "resources/resource_oscer.html#logging-on-using-mobaxterm---windows",
+    "title": "What is OSCER?",
+    "section": "Logging on using MobaXterm - Windows",
+    "text": "Logging on using MobaXterm - Windows\nIf you have a Windows system, please follow the steps on OSCER’s page to install MobaXterm linked here under the Windows (a) MobaxTerm section: OSCER’s Getting Started Page\nOnce the terminal window appears, please enter your credentials correctly. You will see a wall of text with OSCER info and finally at the end a line indicating your logged on to an OSCER login node: (base) [USER@sooner# ~]$"
   },
   {
-    "objectID": "lectures/lecture_2.html#feature-table-construction-of-amplicon-variance-sequences-asvs-using-dada2",
-    "href": "lectures/lecture_2.html#feature-table-construction-of-amplicon-variance-sequences-asvs-using-dada2",
-    "title": "16S rRNA Microbiome Analysis - Part 1",
-    "section": "3-Feature Table Construction of Amplicon Variance Sequences (ASVs) using DADA2",
-    "text": "3-Feature Table Construction of Amplicon Variance Sequences (ASVs) using DADA2\ninput_trimmed_seqs=\"output/2_trimmed_seqs/trimmed-demux-pairedend.qza\"\nnum_cores=20\nnum_reads_learn=1000000\ntrunc_len_f=282\ntrunc_len_r=234\n\ndada2_res_dir=\"output/3_denoised_seqs\"\nmkdir $dada2_res_dir\n\nqiime dada2 denoise-paired \\\n    --i-demultiplexed-seqs $input_trimmed_seqs \\\n    --p-trunc-len-f $trunc_len_f \\\n    --p-trunc-len-r $trunc_len_r \\\n    --p-n-threads $num_cores \\\n    --p-n-reads-learn $num_reads_learn \\\n    --o-table $dada2_res_dir/feat-table.qza \\\n    --o-representative-sequences $dada2_res_dir/rep-seqs.qza \\\n    --o-denoising-stats $dada2_res_dir/denoising-stats.qza \\\n    --verbose \\\n    &&gt; $dada2_res_dir/denoising_dada2.log \n\nqiime metadata tabulate \\\n    --m-input-file $dada2_res_dir/denoising-stats.qza \\\n    --o-visualization $dada2_res_dir/denoising-stats.qzv\n    \nqiime feature-table summarize \\\n    --i-table $dada2_res_dir/feat-table.qza \\\n    --o-visualization $dada2_res_dir/feat-table.qzv\n\nqiime feature-table tabulate-seqs \\\n  --i-data  $dada2_res_dir/rep-seqs.qza \\\n  --o-visualization  $dada2_res_dir/rep-seqs.qzv"
+    "objectID": "resources/resource_oscer.html#logging-on-through-terminal---macos-and-linux",
+    "href": "resources/resource_oscer.html#logging-on-through-terminal---macos-and-linux",
+    "title": "What is OSCER?",
+    "section": "Logging on through Terminal - MacOS and Linux",
+    "text": "Logging on through Terminal - MacOS and Linux\nIf you have a mac or linux system, to log into OSCER please have your username and password on hand. On your computer open up the terminal application. Once on the terminal, please type in: ssh USERNAME@sooner.oscer.ou.edu\nAfterwards it will prompt you to type in your password. Start typing it in, do not worry if it does not appear on screen that you are typing this is normal. after you have typed it in click your Enter key.\nIf you entered your credentials correctly, you will see a wall of text with OSCER info and finally at the end a line indicating your logged on to an OSCER login node: (base) [USER@sooner# ~]$\nAt the end of this process, you should be logged into a sooner log in node on OSCER!"
   },
   {
-    "objectID": "lectures/lecture_2.html#phylogenectic-tree",
-    "href": "lectures/lecture_2.html#phylogenectic-tree",
-    "title": "16S rRNA Microbiome Analysis - Part 1",
-    "section": "4-Phylogenectic Tree",
-    "text": "4-Phylogenectic Tree\nphylo_tree_dir=\"output/4_phylogenetic_tree\"\nmkdir $phylo_tree_dir\n\nqiime phylogeny align-to-tree-mafft-fasttree \\\n  --i-sequences $dada2_res_dir/rep-seqs.qza \\\n  --o-alignment $phylo_tree_dir/aligned-rep-seqs.qza \\\n  --o-masked-alignment $phylo_tree_dir/masked-aligned-rep-seqs.qza \\\n  --o-tree $phylo_tree_dir/unrooted-tree.qza \\\n  --o-rooted-tree $phylo_tree_dir/rooted-tree.qza"
-  },
-  {
-    "objectID": "lectures/lecture_2.html#alpha-diversity-beta-diversity-and-alpha-refraction",
-    "href": "lectures/lecture_2.html#alpha-diversity-beta-diversity-and-alpha-refraction",
-    "title": "16S rRNA Microbiome Analysis - Part 1",
-    "section": "5-Alpha Diversity, Beta Diversity, and Alpha Refraction",
-    "text": "5-Alpha Diversity, Beta Diversity, and Alpha Refraction\nalpha_beta_dir=\"output/5_alpha_beta_div_rarefac\"\nmkdir $alpha_beta_dir\n\nqiime diversity core-metrics-phylogenetic \\\n  --i-phylogeny  $phylo_tree_dir/rooted-tree.qza \\\n  --i-table table.qza \\\n  --p-sampling-depth 1103 \\\n  --m-metadata-file sample-metadata.tsv \\\n  --output-dir $alpha_beta_dir/diversity-core-metrics-phylogenetic\nqiime diversity alpha-rarefaction \\\n  --i-table table.qza \\\n  --i-phylogeny rooted-tree.qza \\\n  --p-max-depth 4000 \\\n  --m-metadata-file sample-metadata.tsv \\\n  --o-visualization alpha-rarefaction.qzv"
-  },
-  {
-    "objectID": "lectures/lecture_2.html#full-script",
-    "href": "lectures/lecture_2.html#full-script",
-    "title": "16S rRNA Microbiome Analysis - Part 1",
-    "section": "FULL SCRIPT",
-    "text": "FULL SCRIPT\n#!/bin/bash\n#SBATCH --partition=ircfhp\n#SBATCH --nodelist=c923\n#SBATCH --container=el9hw\n#SBATCH --nodes=1\n#SBATCH --ntasks=1\n#SBATCH --cpus-per-task=10\n#SBATCH --mem=30G\n#SBATCH --chdir=/home\n#SBATCH --output=qc_%A_%a_stdout.txt\n#SBATCH --error=qc_%A_%a_stderr.txt\n#SBATCH --mail-user=eleana-cabello@ouhsc.edu\n#SBATCH --mail-type=ALL\n\n\n#==============================================================================\n# BASH Strict mode (i.e. \"fail fast\" to reduce hard-to-find bugs)\nset -e          # EXIT the script if any command returns non-zero exit status.\nset -E          # Make ERR trapping work inside functions too.\nset -u          # Variables must be pre-defined before using them.\nset -o pipefail # If a pipe fails, returns the error code for the failed pipe\n                #  even if it isn't the last command in a series of pipes.\n#==============================================================================\n\n module load QIIME2/2021.8\n\n################################################\nSTEP 0\n################################################\nqiime_out_dir=\"output\"\nmkdir $qiime_out_dir\n\nqiime metadata tabulate \\\n  --m-input-file sample-metadata.tsv \\\n  --o-visualization sample-metadata-viz.qzv\n\n################################################\nSTEP 1\n################################################\nimport_seqs_dir=\"output/1_imported_seqs\"\nmanifest_file= \"\"\n\nmkdir $import_seqs_dir\n\nqiime tools import \\\n    --type 'SampleData[PairedEndSequencesWithQuality]' \\\n    --input-path $manifest_file \\\n    --input-format PairedEndFastqManifestPhred33V2 \\\n    --output-path $import_seqs_dir/demux-pairedend.qza\n\nqiime demux summarize \\\n    --i-data $import_seqs_dir/demux-pairedend.qza \\\n    --o-visualization $import_seqs_dir/demux-pairedend.qzv\n    \n################################################\nSTEP 2\n################################################\ninput_seqs=\"output/1_imported_seqs/demux-pairedend.qza\"\nf_primer=\"\"\nr_primer=\"\"\nerror_rate=0.1\nmin_length=100\nnum_cores=22\n\ntrimmed_dir=\"output/2_trimmed_seqs\"\nmkdir $trimmed_dir\n\nqiime cutadapt trim-paired \\\n    --i-demultiplexed-sequences $input_seqs \\\n    --p-cores $num_cores \\\n    --p-front-f $f_primer \\\n    --p-front-r $r_primer \\\n    --p-error-rate $error_rate \\\n    --p-minimum-length $min_length \\\n    --o-trimmed-sequences $trimmed_dir/trimmed-demux-pairedend.qza \\\n    --verbose \\\n  &&gt; $trimmed_dir/trimmed.log \n  \nqiime demux summarize \\\n    --i-data $trimmed_dir/trimmed-demux-pairedend.qza \\\n    --o-visualization $trimmed_dir/trimmed-demux-pairedend.qzv \n\n################################################\nSTEP 3\n################################################\n\ninput_trimmed_seqs=\"output/2_trimmed_seqs/trimmed-demux-pairedend.qza\"\nnum_cores=20\nnum_reads_learn=1000000\ntrunc_len_f=282\ntrunc_len_r=234\n\ndada2_res_dir=\"output/3_denoised_seqs\"\nmkdir $dada2_res_dir\n\nqiime dada2 denoise-paired \\\n    --i-demultiplexed-seqs $input_trimmed_seqs \\\n    --p-trunc-len-f $trunc_len_f \\\n    --p-trunc-len-r $trunc_len_r \\\n    --p-n-threads $num_cores \\\n    --p-n-reads-learn $num_reads_learn \\\n    --o-table $dada2_res_dir/feat-table.qza \\\n    --o-representative-sequences $dada2_res_dir/rep-seqs.qza \\\n    --o-denoising-stats $dada2_res_dir/denoising-stats.qza \\\n    --verbose \\\n    &&gt; $dada2_res_dir/denoising_dada2.log \n\nqiime metadata tabulate \\\n    --m-input-file $dada2_res_dir/denoising-stats.qza \\\n    --o-visualization $dada2_res_dir/denoising-stats.qzv\n    \nqiime feature-table summarize \\\n    --i-table $dada2_res_dir/feat-table.qza \\\n    --o-visualization $dada2_res_dir/feat-table.qzv\n\nqiime feature-table tabulate-seqs \\\n  --i-data  $dada2_res_dir/rep-seqs.qza \\\n  --o-visualization  $dada2_res_dir/rep-seqs.qzv\n\n################################################\nSTEP 4\n################################################\n\nphylo_tree_dir=\"output/4_phylogenetic_tree\"\nmkdir $phylo_tree_dir\n\nqiime phylogeny align-to-tree-mafft-fasttree \\\n  --i-sequences $dada2_res_dir/rep-seqs.qza \\\n  --o-alignment $phylo_tree_dir/aligned-rep-seqs.qza \\\n  --o-masked-alignment $phylo_tree_dir/masked-aligned-rep-seqs.qza \\\n  --o-tree $phylo_tree_dir/unrooted-tree.qza \\\n  --o-rooted-tree $phylo_tree_dir/rooted-tree.qza\n\n################################################\nSTEP 5\n################################################\n\nalpha_beta_dir=\"output/5_alpha_beta_div_rarefac\"\nmkdir $alpha_beta_dir\n\nsampling_depth=\"\"\n\nqiime diversity core-metrics-phylogenetic \\\n  --i-phylogeny  $phylo_tree_dir/rooted-tree.qza \\\n  --i-table $dada2_res_dir/feat-table.qza \\\n  --p-sampling-depth $sampling_depth \\\n  --m-metadata-file ${manifest_file} \\\n  --output-dir $alpha_beta_dir/diversity-core-metrics-phylogenetic\n\nmax_depth=\"\"\n\nqiime diversity alpha-rarefaction \\\n  --i-table $dada2_res_dir/feat-table.qza \\\n  --i-phylogeny $phylo_tree_dir/rooted-tree.qza \\\n  --p-max-depth $max_depth \\\n  --m-metadata-file ${manifest_file} \\\n  --o-visualization $alpha_beta_dir/alpha-rarefaction.qzv"
-  },
-  {
-    "objectID": "lectures/lecture_1.html",
-    "href": "lectures/lecture_1.html",
-    "title": "OSCER and BASH, BASH and OSCER",
+    "objectID": "resources/resources_R.html",
+    "href": "resources/resources_R.html",
+    "title": "Programming in R for this Course",
     "section": "",
-    "text": "Terminal - A text-based user interface that allows users to interact with a computer by typing commands\nDirectory - A folder location in your computer\nWorking Directory - The current directory a user is in\nPath - Directions to a folder or file\nCommand - BASH command to accomplish a task i.e. creating file, removing file, etc.\nCommand Flag - Modifications to a command to consider"
+    "text": "Please download the version of R appropriate for your device and OS system:\n\nWindows Distribution Page\nMacOS Distribution Page\nLinux Distribution Page\n\nAfter installing R please install RStudio from the following link:\n\nPosit Website"
   },
   {
-    "objectID": "lectures/lecture_1.html#piping",
-    "href": "lectures/lecture_1.html#piping",
-    "title": "OSCER and BASH, BASH and OSCER",
-    "section": "Piping",
-    "text": "Piping\nCMD1 SOME_FILE.txt | CMD2         # Structure\nls SOME_DIR | grep \"R1\"           # Example"
-  },
-  {
-    "objectID": "lectures/lecture_1.html#standard-output",
-    "href": "lectures/lecture_1.html#standard-output",
-    "title": "OSCER and BASH, BASH and OSCER",
-    "section": "Standard Output",
-    "text": "Standard Output\necho \"some string\"                # Print to screen\nCMD SOME_FILE.txt &gt; NEW_FILE.txt            # Overwrite file with output\nCMD SOME_FILE.txt &gt;&gt; ADD_TO_EXISTING.txt    # Take output and add output to existing content in file\nCMD SOME_FILE.txt 1&gt; stdout.txt           # Redirect the standard output to a file\nCMD SOME_FILE.txt 2&gt; stderror.txt        # Redirect the standard error output to a file"
-  },
-  {
-    "objectID": "lectures/lecture_1.html#file-editing",
-    "href": "lectures/lecture_1.html#file-editing",
-    "title": "OSCER and BASH, BASH and OSCER",
-    "section": "File Editing",
-    "text": "File Editing\nnano                    # Opens text editor to create new file\nnano file.txt            # Opens file in text editor"
-  },
-  {
-    "objectID": "lectures/lecture_1.html#pattern-searching",
-    "href": "lectures/lecture_1.html#pattern-searching",
-    "title": "OSCER and BASH, BASH and OSCER",
-    "section": "Pattern Searching",
-    "text": "Pattern Searching\ngrep \"some-string\" SOME_FILE.txt    # Grabs lines in file that contain the string pattern"
-  },
-  {
-    "objectID": "lectures/lecture_6.html",
-    "href": "lectures/lecture_6.html",
-    "title": "End of Course",
+    "objectID": "resources/resources_R.html#installing-r-and-rstudio",
+    "href": "resources/resources_R.html#installing-r-and-rstudio",
+    "title": "Programming in R for this Course",
     "section": "",
-    "text": "How to use OSCER now\n\n\nCourse Form"
+    "text": "Please download the version of R appropriate for your device and OS system:\n\nWindows Distribution Page\nMacOS Distribution Page\nLinux Distribution Page\n\nAfter installing R please install RStudio from the following link:\n\nPosit Website"
   },
   {
-    "objectID": "lectures/lecture_4.html#quality-check",
-    "href": "lectures/lecture_4.html#quality-check",
-    "title": "Bulk RNA-seq and Pathway Analysis",
-    "section": "1-Quality Check",
-    "text": "1-Quality Check"
+    "objectID": "resources/resources_R.html#packages-for-this-course",
+    "href": "resources/resources_R.html#packages-for-this-course",
+    "title": "Programming in R for this Course",
+    "section": "Packages for this Course",
+    "text": "Packages for this Course\nWe will be using R packages from both Comprehensive R Archive Network (Cran) the central repository for R packages and Bioconductor another repository that hosts thousands of packages specifically made for biomedical research.\n\nCran Packages\nBelow is the code needed to install the CRAN packages needed for this course and import them into any script:\ninstall.packages(c(\"tidyverse\", \"ggplot2\", \"pheatmap\"))\nLibrary(tidyverse)\nLibrary(ggplot2) \nLibrary(pheatmap)\n\n\nBioconductor Packages\nBioconductor packages work a litte differently. First the bioconductor manager package BiocManager must be installed first and then using the methods of that package you can install other Bioconductor package like DESeq2:\nif (!require(\"BiocManager\", quietly = TRUE))\n    install.packages(\"BiocManager\")\n    \nBiocManager::install(\"DESeq2\")\nThese packages can be imported into a script/workspace like typical CRAN packages after being installed through BiocManager:\nLibrary(Deseq2)"
   },
   {
-    "objectID": "lectures/lecture_4.html#mapping-to-reference-genome",
-    "href": "lectures/lecture_4.html#mapping-to-reference-genome",
-    "title": "Bulk RNA-seq and Pathway Analysis",
-    "section": "Mapping to Reference Genome",
-    "text": "Mapping to Reference Genome\n\nDifferent Types of Mappers\n\n\nBuilding Reference Indices\n\n\nMapping"
-  },
-  {
-    "objectID": "lectures/lecture_4.html#creating-count-matrix",
-    "href": "lectures/lecture_4.html#creating-count-matrix",
-    "title": "Bulk RNA-seq and Pathway Analysis",
-    "section": "Creating Count Matrix",
-    "text": "Creating Count Matrix\n\nManually\n\n\n\nfeatureCounts"
-  },
-  {
-    "objectID": "lectures/lecture_4.html#deseq2-anaylsis-of-differentially-expressed-genes",
-    "href": "lectures/lecture_4.html#deseq2-anaylsis-of-differentially-expressed-genes",
-    "title": "Bulk RNA-seq and Pathway Analysis",
-    "section": "DESeq2 Anaylsis of Differentially Expressed Genes",
-    "text": "DESeq2 Anaylsis of Differentially Expressed Genes"
-  },
-  {
-    "objectID": "lectures/lecture_3.html#classifying-asvs-using-a-feature-classifier",
-    "href": "lectures/lecture_3.html#classifying-asvs-using-a-feature-classifier",
-    "title": "16S rRNA Microbiome Analysis - Part 2",
-    "section": "6-Classifying ASV’s using a Feature Classifier",
-    "text": "6-Classifying ASV’s using a Feature Classifier\ngg_version=\"gg_13_8_otus\"\ngg_ref_fasta=\"gg_ref/$gg_version/rep_set/99_otus.fasta\"\ngg_ref_tax=\"gg_ref/$gg_version/taxonomy/99_otu_taxonomy.txt\"\n\nprimer_f=\"CCTACGGGAGGCAGCAG\"\nprimer_r=\"GGACTACHVGGGTWTCTAAT\"\nregion=\"v3_v4\"\n\nclassifier_name=\"classifier-${region}-${gg_version}\"\nclassifier_dir=\"output/5_classifier\"\n\nmkdir $classifier_dir\n\n## Classifier Training\nqiime tools import \\\n    --type 'FeatureData[Sequence]' \\\n    --input-path $gg_ref_fasta \\\n    --output-path $classifier_dir/${gg_version}-seqs.qza\n\nqiime tools import \\\n    --type 'FeatureData[Taxonomy]' \\\n    --input-format HeaderlessTSVTaxonomyFormat \\\n    --input-path $gg_ref_tax \\\n    --output-path $classifier_dir/${gg_version}-taxonomy.qza\n\nqiime feature-classifier extract-reads \\\n    --i-sequences $classifier_dir/${gg_version}-seqs.qza \\\n    --p-f-primer $primer_f \\\n    --p-r-primer $primer_r \\\n    --verbose \\\n    --o-reads $classifier_dir/ref-seqs-${region}.qza\n\nqiime feature-classifier fit-classifier-naive-bayes \\\n    --i-reference-reads $classifier_dir/ref-seqs-${region}.qza \\\n    --i-reference-taxonomy $classifier_dir/${gg_version}_taxonomy.qza \\\n    --verbose \\\n    --o-classifier $classifier_dir/$classifier_name.qza\nmetadata_file=\"output/0_metadata_files/metadata-copy.tsv\"\nclassifier=\"output/5_classifier/classifier_v3_v4_gg_13_8.qza\"\n\ntax_class_dir=\"output/6_taxa_classification\"\nmkdir $tax_class_dir\n\nqiime feature-classifier classify-sklearn \\\n    --i-classifier $classifier \\\n    --i-reads $rep_seqs \\\n    --o-classification $class_sub_analysis_dir/taxonomy.qza\n    \nqiime metadata tabulate \\\n    --m-input-file $class_sub_analysis_dir/taxonomy.qza \\\n    --o-visualization $class_sub_analysis_dir/taxonomy.qzv\n\nqiime taxa barplot \\\n    --i-table $rep_seqs_table \\\n    --i-taxonomy $class_sub_analysis_dir/taxonomy.qza \\\n    --m-metadata-file $metadata_file \\\n    --o-visualization $class_sub_analysis_dir/taxa-barplot.qzv"
-  },
-  {
-    "objectID": "lectures/lecture_3.html#differential-abundance-using-ancom-bc",
-    "href": "lectures/lecture_3.html#differential-abundance-using-ancom-bc",
-    "title": "16S rRNA Microbiome Analysis - Part 2",
-    "section": "Differential Abundance using ANCOM-BC",
-    "text": "Differential Abundance using ANCOM-BC\nqiime composition ancombc \\\n  --i-table gut-table.qza \\\n  --m-metadata-file sample-metadata.tsv \\\n  --p-formula subject \\\n  --o-differentials ancombc-subject.qza\nqiime composition da-barplot \\\n  --i-data ancombc-subject.qza \\\n  --p-significance-threshold 0.001 \\\n  --o-visualization da-barplot-subject.qzv"
-  },
-  {
-    "objectID": "lectures/lecture_3.html#full-script",
-    "href": "lectures/lecture_3.html#full-script",
-    "title": "16S rRNA Microbiome Analysis - Part 2",
-    "section": "FULL SCRIPT",
-    "text": "FULL SCRIPT\n################################################\nSTEP 0\n################################################\ngg_version=\"gg_13_8_otus\"\ngg_ref_fasta=\"gg_ref/$gg_version/rep_set/99_otus.fasta\"\ngg_ref_tax=\"gg_ref/$gg_version/taxonomy/99_otu_taxonomy.txt\"\n\nprimer_f=\"CCTACGGGAGGCAGCAG\"\nprimer_r=\"GGACTACHVGGGTWTCTAAT\"\nregion=\"v3_v4\"\n\nclassifier_name=\"classifier-${region}-${gg_version}\"\nclassifier_dir=\"output/5_classifier\"\n\nmkdir $classifier_dir\n\n## Classifier Training\nqiime tools import \\\n    --type 'FeatureData[Sequence]' \\\n    --input-path $gg_ref_fasta \\\n    --output-path $classifier_dir/${gg_version}-seqs.qza\n\nqiime tools import \\\n    --type 'FeatureData[Taxonomy]' \\\n    --input-format HeaderlessTSVTaxonomyFormat \\\n    --input-path $gg_ref_tax \\\n    --output-path $classifier_dir/${gg_version}-taxonomy.qza\n\nqiime feature-classifier extract-reads \\\n    --i-sequences $classifier_dir/${gg_version}-seqs.qza \\\n    --p-f-primer $primer_f \\\n    --p-r-primer $primer_r \\\n    --verbose \\\n    --o-reads $classifier_dir/ref-seqs-${region}.qza\n\nqiime feature-classifier fit-classifier-naive-bayes \\\n    --i-reference-reads $classifier_dir/ref-seqs-${region}.qza \\\n    --i-reference-taxonomy $classifier_dir/${gg_version}_taxonomy.qza \\\n    --verbose \\\n    --o-classifier $classifier_dir/$classifier_name.qza\n    \n################################################\nSTEP 0\n################################################\nmetadata_file=\"output/0_metadata_files/metadata-copy.tsv\"\nclassifier=\"output/5_classifier/classifier_v3_v4_gg_13_8.qza\"\n\ntax_class_dir=\"output/6_taxa_classification\"\nmkdir $tax_class_dir\n\nqiime feature-classifier classify-sklearn \\\n    --i-classifier $classifier \\\n    --i-reads $rep_seqs \\\n    --o-classification $class_sub_analysis_dir/taxonomy.qza\n    \nqiime metadata tabulate \\\n    --m-input-file $class_sub_analysis_dir/taxonomy.qza \\\n    --o-visualization $class_sub_analysis_dir/taxonomy.qzv\n\nqiime taxa barplot \\\n    --i-table $rep_seqs_table \\\n    --i-taxonomy $class_sub_analysis_dir/taxonomy.qza \\\n    --m-metadata-file $metadata_file \\\n    --o-visualization $class_sub_analysis_dir/taxa-barplot.qzv\n\n################################################\nSTEP 0\n################################################\n    \nqiime composition ancombc \\\n  --i-table gut-table.qza \\\n  --m-metadata-file sample-metadata.tsv \\\n  --p-formula subject \\\n  --o-differentials ancombc-subject.qza\nqiime composition da-barplot \\\n  --i-data ancombc-subject.qza \\\n  --p-significance-threshold 0.001 \\\n  --o-visualization da-barplot-subject.qzv"
-  },
-  {
-    "objectID": "lectures.html",
-    "href": "lectures.html",
-    "title": "Lectures",
+    "objectID": "lectures/lecture_3_bulk_rna_seq_1.html",
+    "href": "lectures/lecture_3_bulk_rna_seq_1.html",
+    "title": "Bulk RNA-Seq I",
     "section": "",
-    "text": "Date\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n06-02-2025\n\n\nOSCER and BASH, BASH and OSCER\n\n\nEleana Cabello\n\n\n\n\n\n\n06-05-2025\n\n\n16S rRNA Microbiome Analysis - Part 1\n\n\nEleana Cabello\n\n\n\n\n\n\n06-09-2025\n\n\n16S rRNA Microbiome Analysis - Part 2\n\n\nEleana Cabello\n\n\n\n\n\n\n06-12-2025\n\n\nBulk RNA-seq and Pathway Analysis\n\n\nEleana Cabello\n\n\n\n\n\n\n06-16-2025\n\n\nIntro to Data Science\n\n\nEleana Cabello\n\n\n\n\n\n\n06-26-2025\n\n\nEnd of Course\n\n\nEleana Cabello\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "assignments.html",
-    "href": "assignments.html",
-    "title": "Assignments",
-    "section": "",
-    "text": "Date\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\nDue\n\n\n\n\n\n\n\n\n06-02-2025\n\n\nQuality Check of FASTQ Files on OSCER\n\n\nEleana Cabello\n\n\n06-04-2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "lecture_slides/lecture_1_slides.html#getting-up",
-    "href": "lecture_slides/lecture_1_slides.html#getting-up",
-    "title": "Lecture 1",
-    "section": "Getting up",
-    "text": "Getting up\n\nTurn off alarm\nGet out of bed"
-  },
-  {
-    "objectID": "lecture_slides/lecture_1_slides.html#going-to-sleep",
-    "href": "lecture_slides/lecture_1_slides.html#going-to-sleep",
-    "title": "Lecture 1",
-    "section": "Going to sleep",
-    "text": "Going to sleep\n\nGet in bed\nCount sheep"
+    "text": "Prerequisites\nPlease have the following ready before class:\n\nHave your OSCER credentials on hand\nBe able to access you OSCER account through Terminal or Mobaxterm\nHave lecture data copied over from Eleana’s Scratch\n\n\n\nLearning objectives\nAt the end of this lesson you will:\n\nUnderstand the steps in the Bulk RNA-seq pipeline up to the creation of a count matrix\nBe familiar with submitting SBATCH scripts to SLURM\nHave a better understanding of several bioinformatics file types\n\n\n\nLecture Slides"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Introduction to Bioinformatics Course",
+    "title": "MI6401 Introduction to Data Science Course",
     "section": "",
-    "text": "Welcome! This will be the place to refer to for this class. All lectures, assignments, and projects will be placed here. Grades and adminstrative stuff will be taken care of in Canvas, if you are enrolled in the course. Below is calendar overview of what we will cover in this course and what anticipated lectures we will be going through.\n\nCourse Calendar\n\n\n\n\n\n\n\n\n\n\nJune\n\n\nMon\nTue\nWed\nThu\nFri\n\n\n\n\n2\nWorking in OSCER and BASH\n3\n4\n5\n16S rRNA Microbiome Analysis\n6\n\n\n9\n16S rRNA Microbiome Analysis\n10\n11\n12\nBulk RNA-seq and Consensus Pathway Analysis\n13\n\n\n16\nIntroduction to Data Science\n17\n18\n19\nCourse Project Help Session\n20\n\n\n23\nIn-class Presentations\n24\n25\n26\nIn-class Presentations\n27\n\n\n\n\n\nCourse Information\n\n\n\n\n\n\n\n\n\nCourse Staff\nDave Dyer\nProfessor Emeritus,\nDepartment of Microbiology and Immunology\nEleana Cabello\nBioinformatics Analyst for OK-INBRE,\nDepartment of Microbiology and Immunology\nHande Acar\nSr Bioinformatics Analyst for IRCF\n\n\nLecture Times\nMon and Thu\n10:00 - 11:20am\n\n\n\n\nLocation\nTBD\n\n\n\n\nOffice Hours\nTBD"
+    "text": "Welcome! This will be the place to refer to for this class. All lectures, assignments, and projects will be placed here. Grades and adminstrative stuff will be taken care of in Canvas, if you are enrolled in the course. Below is calendar overview of what we will cover in this course and what anticipated lectures we will be going through.\n\nSchedule\n\n\n\n\n\n\n\nDate\nTopic\n\n\n\n\n06/02\nIntroduction to Data Science - Courtney Montgomery️\n\n\n06/05\nWorking on OSCER and Using BASH - ️Eleana Cabello\n\n\n06/09\nBulk RNA-Seq I - ️Eleana Cabello\n\n\n06/12\nBulk RNA-Seq II - TBD\n\n\n06/16\nHelp Session I\n\n\n06/19\nHelp Session II\n\n\n06/23\nPathway Analysis with IPA - TBD\n\n\n06/26\nCourse Project Presentations\n\n\n\n\n\nCourse Information\n\n\n\nLecture Times\nTUE and FRI 10:00 - 11:20AM\n\n\nLocation\nOMRF Training Room\n\n\nOffice Hours\nTBD"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Date\n\n\n\nTitle\n\n\n\n\n\n\n\n\n06-02-2026\n\n\nWhat is OSCER?\n\n\n\n\n\n\n06-05-2026\n\n\nProgramming in R for this Course\n\n\n\n\n\n\nNo matching items"
   }
 ]
