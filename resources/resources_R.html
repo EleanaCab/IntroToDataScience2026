@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -75,7 +75,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-414a04fae7b194d7d79f6939640f1863.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -161,7 +161,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#installing-r-and-rstudio" id="toc-installing-r-and-rstudio" class="nav-link active" data-scroll-target="#installing-r-and-rstudio">Installing R and RStudio</a></li>
   <li><a href="#packages-for-this-course" id="toc-packages-for-this-course" class="nav-link" data-scroll-target="#packages-for-this-course">Packages for this Course</a>
   <ul class="collapse">
-  <li><a href="#cran-packages" id="toc-cran-packages" class="nav-link" data-scroll-target="#cran-packages">Cran Packages</a></li>
+  <li><a href="#cran-packages" id="toc-cran-packages" class="nav-link" data-scroll-target="#cran-packages">CRAN Packages</a></li>
   <li><a href="#bioconductor-packages" id="toc-bioconductor-packages" class="nav-link" data-scroll-target="#bioconductor-packages">Bioconductor Packages</a></li>
   </ul></li>
   </ul>
@@ -203,31 +203,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="https://cran.r-project.org/bin/macosx/">MacOS Distribution Page</a></li>
 <li><a href="https://cran.r-project.org/index.html">Linux Distribution Page</a></li>
 </ul>
-<p>After installing R please install RStudio from the following link:</p>
+<p>After installing R, please install RStudio from the following link:</p>
 <ul>
 <li><a href="https://posit.co/download/rstudio-desktop">Posit Website</a></li>
 </ul>
 </section>
 <section id="packages-for-this-course" class="level2">
 <h2 class="anchored" data-anchor-id="packages-for-this-course">Packages for this Course</h2>
-<p>We will be using R packages from both Comprehensive R Archive Network (Cran) the central repository for R packages and Bioconductor another repository that hosts thousands of packages specifically made for biomedical research.</p>
+<p>We will be using R packages from both the Comprehensive R Archive Network (CRAN), the central repository for R packages, and Bioconductor, another repository that hosts thousands of packages specifically made for biomedical research.</p>
 <section id="cran-packages" class="level3">
-<h3 class="anchored" data-anchor-id="cran-packages">Cran Packages</h3>
+<h3 class="anchored" data-anchor-id="cran-packages">CRAN Packages</h3>
 <p>Below is the code needed to install the CRAN packages needed for this course and import them into any script:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"tidyverse"</span>, <span class="st">"ggplot2"</span>, <span class="st">"pheatmap"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Library</span>(tidyverse)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Library</span>(ggplot2) </span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">Library</span>(pheatmap)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2) </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pheatmap)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="bioconductor-packages" class="level3">
 <h3 class="anchored" data-anchor-id="bioconductor-packages">Bioconductor Packages</h3>
-<p>Bioconductor packages work a litte differently. First the bioconductor manager package <strong>BiocManager</strong> must be installed first and then using the methods of that package you can install other Bioconductor package like DESeq2:</p>
+<p>Bioconductor packages work a little differently. First, the Bioconductor manager package <strong>BiocManager</strong> must be installed, and then using the methods of that package, you can install other Bioconductor packages like DESeq2:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"BiocManager"</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">install.packages</span>(<span class="st">"BiocManager"</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="st">"DESeq2"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>These packages can be imported into a script/workspace like typical CRAN packages after being installed through BiocManager:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Library</span>(Deseq2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DESeq2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>

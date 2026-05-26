@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -25,41 +25,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -76,7 +41,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-414a04fae7b194d7d79f6939640f1863.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -161,23 +126,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link active" data-scroll-target="#prerequisites">Prerequisites</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
-  <li><a href="#lecture" id="toc-lecture" class="nav-link" data-scroll-target="#lecture">Lecture</a></li>
-  <li><a href="#setting-the-stage" id="toc-setting-the-stage" class="nav-link" data-scroll-target="#setting-the-stage">Setting the Stage</a></li>
-  <li><a href="#logging-into-oscer-account" id="toc-logging-into-oscer-account" class="nav-link" data-scroll-target="#logging-into-oscer-account">Logging into OSCER Account</a></li>
-  <li><a href="#working-on-oscers-hpc-system" id="toc-working-on-oscers-hpc-system" class="nav-link" data-scroll-target="#working-on-oscers-hpc-system">Working on OSCER’s HPC System</a></li>
-  <li><a href="#bash-programming" id="toc-bash-programming" class="nav-link" data-scroll-target="#bash-programming">BASH Programming</a>
-  <ul class="collapse">
-  <li><a href="#navigating-directories" id="toc-navigating-directories" class="nav-link" data-scroll-target="#navigating-directories">Navigating Directories</a></li>
-  <li><a href="#creating-moving-and-deleting-directories" id="toc-creating-moving-and-deleting-directories" class="nav-link" data-scroll-target="#creating-moving-and-deleting-directories">Creating, Moving, and Deleting Directories</a></li>
-  <li><a href="#deleting-copying-and-moving-files" id="toc-deleting-copying-and-moving-files" class="nav-link" data-scroll-target="#deleting-copying-and-moving-files">Deleting, Copying, and Moving Files</a></li>
-  <li><a href="#piping" id="toc-piping" class="nav-link" data-scroll-target="#piping">Piping</a></li>
-  <li><a href="#standard-output" id="toc-standard-output" class="nav-link" data-scroll-target="#standard-output">Standard Output</a></li>
-  <li><a href="#in-line-file-editor" id="toc-in-line-file-editor" class="nav-link" data-scroll-target="#in-line-file-editor">In Line File Editor</a></li>
-  </ul></li>
-  <li><a href="#batch-scripting-and-programs-on-oscer" id="toc-batch-scripting-and-programs-on-oscer" class="nav-link" data-scroll-target="#batch-scripting-and-programs-on-oscer">Batch Scripting and Programs on OSCER</a>
-  <ul class="collapse">
-  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise">Exercise</a></li>
-  </ul></li>
+  <li><a href="#lecture-slides" id="toc-lecture-slides" class="nav-link" data-scroll-target="#lecture-slides">Lecture Slides</a></li>
   </ul>
 </nav>
     </div>
@@ -220,7 +169,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Please have the following ready before class:</p>
 <ul>
 <li>Have your OSCER credentials on hand</li>
-<li>Be able to access you OSCER account through Terminal or MobaXterm</li>
+<li>Be able to access your OSCER account through Terminal or MobaXterm</li>
 </ul>
 </section>
 <section id="learning-objectives" class="level1">
@@ -232,171 +181,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>TBD</li>
 </ul>
 </section>
-<section id="lecture" class="level1">
-<h1>Lecture</h1>
-</section>
-<section id="setting-the-stage" class="level1">
-<h1>Setting the Stage</h1>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/lecture_1/local_terminal.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
-</figure>
-</div>
-<ul>
-<li><strong>Terminal</strong> - A text-based user interface that allows users to interact with a computer by typing commands</li>
-<li><strong>Directory</strong> - A folder location in your computer</li>
-<li><strong>Working Directory</strong> - The current directory a user is in</li>
-<li><strong>Path</strong> - Directions to a folder or file</li>
-<li><strong>Command</strong> - BASH command to accomplish a task i.e.&nbsp;creating file, removing file, etc.</li>
-<li><strong>Command Flag</strong> - Modifications to a command to consider</li>
-</ul>
-</section>
-<section id="logging-into-oscer-account" class="level1">
-<h1>Logging into OSCER Account</h1>
-<p>Good news! There is nothing you need to do to setup an account. A guest account has already been made for you by us for FREE!</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Steps to Log In">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Steps to Log In
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li><p>Gather you log in information, username and password.</p></li>
-<li><p>Find the terminal on your computer.</p>
-<p><img src="../images/lecture_1/local_terminal.png" class="img-fluid" width="700"></p></li>
-<li><p>Type the following command to access you OSCER account</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> USERNAME@sooner.oscer.ou.edu <span class="co">#Replace USERNAME with your guest username</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>It will ask for your password, start typing it. It will not appear on your screen do not be alarmed this is normal. Just make sure to enter it correctly then hit enter.</p>
-<p><img src="../images/lecture_1/oscer_login_success.png" class="img-fluid" width="600"></p></li>
-<li><p>You’ve logged into your account!</p>
-<p><img src="../images/lecture_1/oscer_terminal.png" class="img-fluid" width="600"></p></li>
-</ol>
-</div>
-</div>
-</section>
-<section id="working-on-oscers-hpc-system" class="level1">
-<h1>Working on OSCER’s HPC System</h1>
-<p>Your computer is set up in a way where everything is together. Files, programs, and hardware are physically put into one place whether it be a tower or laptop. These system also typically use graphic user interfaces (GUI) like a window for Word or web-based applications. In this course we will primarily not be using these methods of communication with your computer. Instead we will be using things like the terminal, progrmaming scripts, and simple text editors to complete computational tasks.</p>
-<p>The OU Supercomputing Center for Education and Research (OSCER) provides the OU, OUHS, and other Oklahoma institutions with High Performance Computing (HPC) infrastructure.</p>
-<p>HPC system allow for multiple jobs to be run on several processors in a multi-processor enviroment. This is also known as parallel processing. A simple way to put it, it allows for multiple people to submit jobs/processes at the same time. It also means you can submit several jobs at a time and not have to wait for the “computer” to free up after each task.</p>
-<p>Why do we need parallel processing? Think about it as a queue you are in, waiting to submit your job to do on a computer. Your job takes about 5 hours to complete. The person infront of you takes about equal or more and so does the next person infront of them. Whether you are using a computationally heavy program or just have hundreds of samples to process Without parellel processing you will have to wait there for days as one by one gets done in front of you. HPC parallel processing allows for multiple queues for computationally heavy jobs to get done in a faster amount of time.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/lecture_1/oscer_hpc_overview.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="border: 2px solid black; border-radius: 5px; padding: 50px;" width="500"></p>
-</figure>
-</div>
-<p>The figure above shows the overview of OSCER’s HPC structure. In a traditional computer you files system is very much merged with your processing system. Since an HPC system has hundreds even thousands of users, this is not possible to do with an HPC and would likely defeat its purpose. Instead you file system “Home” is seperate from your processing system “Compute Nodes” in this structure. Programs are also seperated from your “Home”.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="OSCER and HPC Resources">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>OSCER and HPC Resources
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><a href="https://www.ou.edu/oscer/about" target="_blank">About OSCER</a></li>
-<li><a href="https://www.ou.edu/oscer/getting_started/terminology" target="_blank">OSCER HPC Terminology</a></li>
-<li><a href="https://www.ou.edu/oscer/getting_started/getting_started_hpc_intro" target="_blank">HPC at OU</a></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="bash-programming" class="level1">
-<h1>BASH Programming</h1>
-<p>The following commands will help you navigate through your OSCER account and submit jobs.</p>
-<section id="navigating-directories" class="level3">
-<h3 class="anchored" data-anchor-id="navigating-directories">Navigating Directories</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span>       <span class="co"># Print wokring directory</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span>        <span class="co"># List contents in a directory</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-lh</span>    <span class="co"># List contents in a directory in a list format and human read able sizes</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">tree</span>      <span class="co"># List directory and file tree</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> SOME_DIR     <span class="co"># Change working directory to the entered directory </span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ..           <span class="co"># Change working directory to parent directory of current directory</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~            <span class="co"># Change working directory to home</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="creating-moving-and-deleting-directories" class="level3">
-<h3 class="anchored" data-anchor-id="creating-moving-and-deleting-directories">Creating, Moving, and Deleting Directories</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> SOME_DIR    <span class="co"># Create directory</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rmdir</span> SOME_DIR    <span class="co"># Remove Directory</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-r</span> SOME_DIR    <span class="co"># Remove Directory</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> ONE_DIR TWO_DIR <span class="co"># Move directory to new directory </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="deleting-copying-and-moving-files" class="level3">
-<h3 class="anchored" data-anchor-id="deleting-copying-and-moving-files">Deleting, Copying, and Moving Files</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> foo.txt                        <span class="co"># Remove file</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> SOME_FILE.txt SOME_FILE.txt    <span class="co"># Copy file to new directory</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> SOME_FILE.txt SOME_FILE.txt    <span class="co"># Move file to new directory</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="piping" class="level2">
-<h2 class="anchored" data-anchor-id="piping">Piping</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">CMD1</span> SOME_FILE.txt <span class="kw">|</span> <span class="ex">CMD2</span>         <span class="co"># Structure</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> SOME_DIR <span class="kw">|</span> <span class="fu">grep</span> <span class="st">"R1"</span>           <span class="co"># Example</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="standard-output" class="level2">
-<h2 class="anchored" data-anchor-id="standard-output">Standard Output</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"some string"</span>                <span class="co"># Print to screen</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">CMD</span> SOME_FILE.txt <span class="op">&gt;</span> NEW_FILE.txt            <span class="co"># Overwrite file with output</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="ex">CMD</span> SOME_FILE.txt <span class="op">&gt;&gt;</span> ADD_TO_EXISTING.txt    <span class="co"># Take output and add output to existing content in file</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">CMD</span> SOME_FILE.txt <span class="dv">1</span><span class="op">&gt;</span> stdout.txt           <span class="co"># Redirect the standard output to a file</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ex">CMD</span> SOME_FILE.txt <span class="dv">2</span><span class="op">&gt;</span> stderror.txt        <span class="co"># Redirect the standard error output to a file</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="in-line-file-editor" class="level2">
-<h2 class="anchored" data-anchor-id="in-line-file-editor">In Line File Editor</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span>                    <span class="co"># Opens text editor to create new file</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span> file.txt            <span class="co"># Opens file in text editor</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-</section>
-<section id="batch-scripting-and-programs-on-oscer" class="level1">
-<h1>Batch Scripting and Programs on OSCER</h1>
-<p>Working on an HPC means we have to communicate with it using its language which is Bash and Bash scripting.</p>
-<p>To use a bioinformatics program we will need to submit jobs through a Bash script. In a sense you will have to anticipate what will need to be done in this script. For example if you want to store your results in a seperate folder than you are working in you will need to create that folder and set the path for those results. Below is an example of what each script will need at the beginning:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --partition=normal</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --ntasks=1</span></span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mem=1G</span></span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --output=jobname_%J_stdout.txt</span></span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --error=jobname_%J_stderr.txt</span></span>
-<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=12:00:00</span></span>
-<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --job-name=jobname</span></span>
-<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mail-user=youremailaddress@ou.edu</span></span>
-<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mail-type=ALL</span></span>
-<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --chdir=/home/$USER/working_directory</span></span>
-<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<section id="exercise" class="level3">
-<h3 class="anchored" data-anchor-id="exercise">Exercise</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --partition=normal</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --ntasks=1</span></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mem=1G</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --output=jobname_%J_stdout.txt</span></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --error=jobname_%J_stderr.txt</span></span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=12:00:00</span></span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --job-name=jobname</span></span>
-<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mail-user=youremailaddress@ou.edu</span></span>
-<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mail-type=ALL</span></span>
-<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --chdir=/home/$USER/working_directory</span></span>
-<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a><span class="co">#==============================================================================</span></span>
-<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a><span class="co"># BASH Strict mode (i.e. "fail fast" to reduce hard-to-find bugs)</span></span>
-<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> <span class="at">-e</span>          <span class="co"># EXIT the script if any command returns non-zero exit status.</span></span>
-<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> <span class="at">-E</span>          <span class="co"># Make ERR trapping work inside functions too.</span></span>
-<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> <span class="at">-u</span>          <span class="co"># Variables must be pre-defined before using them.</span></span>
-<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> <span class="at">-o</span> pipefail <span class="co"># If a pipe fails, returns the error code for the failed pipe</span></span>
-<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>                <span class="co">#  even if it isn't the last command in a series of pipes.</span></span>
-<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a><span class="co">#==============================================================================</span></span>
-<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Hello World!"</span> <span class="op">&gt;</span> helloWorld.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="lecture-slides" class="level1">
+<h1>Lecture Slides</h1>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
