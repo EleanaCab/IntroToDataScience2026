@@ -25,7 +25,7 @@
     "href": "lectures/lecture_2_oscer_bash.html",
     "title": "Working on OSCER and Using BASH",
     "section": "",
-    "text": "Prerequisites\nPlease have the following ready before class:\n\nHave your OSCER credentials on hand\nBe able to access your OSCER account through Terminal or MobaXterm\n\n\n\nLearning objectives\nAt the end of this lesson you will:\n\nTBD\nTBD\nTBD\n\n\n\nLecture Slides"
+    "text": "Prerequisites\nPlease have the following ready before class:\n\nHave your OSCER credentials on hand\nBe able to access your OSCER account through Terminal or MobaXterm\n\nIf you are on a Windows machine, please make sure to have MobaXterm installed\n\n\n\n\nLearning objectives\nAt the end of this lesson you will:\n\nLearn to log into your OSCER account\nBe more familiar with using BASH and navigating OSCER through the terminal\nHave submitted your first SBATCH script\n\n\n\nLecture Slides"
   },
   {
     "objectID": "resources/resource_oscer.html",
@@ -88,7 +88,7 @@
     "href": "lectures/lecture_3_bulk_rna_seq_1.html",
     "title": "Bulk RNA-Seq I",
     "section": "",
-    "text": "Prerequisites\nPlease have the following ready before class:\n\nHave your OSCER credentials on hand\nBe able to access your OSCER account through Terminal or Mobaxterm\nHave lecture data copied over from Eleana’s Scratch\n\n\n\nLearning objectives\nAt the end of this lesson, you will:\n\nUnderstand the steps in the Bulk RNA-seq pipeline up to the creation of a count matrix\nBe familiar with submitting SBATCH scripts to SLURM\nHave a better understanding of several bioinformatics file types\n\n\n\nLecture Slides"
+    "text": "Prerequisites\nPlease have the following ready before class:\n\nHave your OSCER credentials on hand\nBe able to access your OSCER account through Terminal or Mobaxterm\n\n\n\nLearning objectives\nAt the end of this lesson, you will:\n\nUnderstand the steps in the Bulk RNA-seq pipeline up to the creation of a count matrix\nBe familiar with submitting SBATCH scripts to SLURM\nHave a better understanding of several bioinformatics file types\n\n\n\nLecture Slides"
   },
   {
     "objectID": "index.html",
