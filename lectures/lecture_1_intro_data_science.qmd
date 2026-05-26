@@ -10,9 +10,9 @@ draft: False
 
 Please have the following ready before class:
 
-- A confirmtion email for your OSCER account
-- Have your OSCER credentials on hand
-- Have R and RStudio installed on your laptop
+* A confirmation email for your OSCER account
+* Have your OSCER credentials on hand
+* Have R and RStudio installed on your laptop
 
 # Learning objectives
 

@@ -7,7 +7,7 @@ title-block-banner: true
 <br>
 <br>
 
-Welcome! This will be the place to refer to for this class. All lectures, assignments, and projects will be placed here. Grades and adminstrative stuff will be taken care of in Canvas, if you are enrolled in the course. Below is calendar overview of what we will cover in this course and what anticipated lectures we will be going through.
+Welcome! This will be the place to refer to for this class. All lectures, assignments, and projects will be placed here. Grades and administrative stuff will be taken care of in Canvas if you are enrolled in this course. Below is a table overview of what we will cover in this course and what anticipated lectures we will be going through.
 
 # Schedule 
 ```{=html}

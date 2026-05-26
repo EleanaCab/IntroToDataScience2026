@@ -10,20 +10,20 @@ draft: False
 
 Please have the following ready before class:
 
-- Have your OSCER credentials on hand
-- Be able to access you OSCER account through Terminal or Mobaxterm
-- Have lecture data copied over from Eleana's Scratch 
+* Have your OSCER credentials on hand
+* Be able to access your OSCER account through Terminal or Mobaxterm
+* Have lecture data copied over from Eleana’s Scratch
 
 # Learning objectives
 
-At the end of this lesson you will:
+At the end of this lesson, you will:
 
-- Understand the steps in the Bulk RNA-seq pipeline up to the creation of a count matrix
-- Be familiar with submitting SBATCH scripts to SLURM
-- Have a better understanding of several bioinformatics file types
+* Understand the steps in the Bulk RNA-seq pipeline up to the creation of a count matrix
+* Be familiar with submitting SBATCH scripts to SLURM
+* Have a better understanding of several bioinformatics file types
+
 
 # Lecture Slides
-
 
 
 
