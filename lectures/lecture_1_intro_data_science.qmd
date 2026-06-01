@@ -12,17 +12,19 @@ Please have the following ready before class:
 
 * A confirmation email for your OSCER account
 * Have your OSCER credentials on hand
+* Have MobaXterm installed if needed
 * Have R and RStudio installed on your laptop
 
 # Learning objectives
 
 At the end of this lesson you will:
 
-- TBD
-- TBD
-- TBD
+* Be introduced to the course structure, expectations, and workflow.
+* Gain a basic understanding of data science for biomedical applications and common data analysis techniques.
 
 # Lecture Slides
+
+![](../slides/lecture_1_INBRE_introclass2026.pdf){width=640px height=480px}
 
 
 

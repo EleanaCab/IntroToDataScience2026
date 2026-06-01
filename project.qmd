@@ -40,3 +40,4 @@ Please show the following during your presentation:
   * Volcano Plot of results
   * Heatmap of results
 * Summary of key findings from the analysis
+* 10 min limit, 5 slide limit

@@ -95,7 +95,7 @@
     "href": "lectures.html",
     "title": "Lectures",
     "section": "",
-    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\n06-02-2026\n\n\nIntroduction to Data Science\n\n\nCourtney Montgomery\n\n\n\n\n06-05-2026\n\n\nWorking on OSCER and Using BASH\n\n\nEleana Cabello\n\n\n\n\n06-09-2026\n\n\nBulk RNA-Seq I\n\n\nEleana Cabello\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\n06-02-2026\n\n\nIntroduction to Data Science\n\n\nCourtney Montgomery\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lectures/lecture_2.html#demultiplexing-reads",
@@ -333,7 +333,7 @@
     "href": "project.html",
     "title": "Course Project",
     "section": "",
-    "text": "Background\nThroughout this summer course, we have primarily covered core data science concepts and how to perform a bulk RNA-seq analysis using the OUHC supercomputer. This experience has allowed you to become familiar not only with this specific type of analysis but also with important supporting skills such as working with bioinformatics software, understanding common bioinformatics file formats, and navigating the command line terminal. The purpose of this course project is to give you an opportunity to apply what you have learned over the past few weeks using either your own dataset or a dataset assigned to you.\n\n\nProject Guidelines\nBelow is the general outline of the steps you need to take for this project:\n\nImport data into your OSCER workspace, it can be your own, or we can assign data to you\nPerform a quality check on your fastq files\nAlign your fastq read to the reference genome for your dataset using HISAT2\nProduce a count matrix using the program featureCounts and the GFF file of your reference genome\nPerform differential expression analysis using the R Bioconductor Package DeSeq2 and the count matrix you created in the previous steps\n\n\n\nSubmission\nYou will need to submit your presentation ahead of time on Canvas. Otherwise, everything else on the rubric you will need to cover in your presentation.\nPlease show the following during your presentation:\n\nAn organized OSCER workspace\nAn organized and annotated BASH script or scripts used to complete the project\nR Workspace used to complete the analysis with dedicated folders and well-named files\nA walkthrough of the Differential Expression Analysis Document with an explanation for each step\n\nComparing raw counts and normalized counts\nPrincipal Components Analysis\nCreation of DESeq2 Object using count matrix and sample metadata\nVolcano Plot of results\nHeatmap of results\n\nSummary of key findings from the analysis"
+    "text": "Background\nThroughout this summer course, we have primarily covered core data science concepts and how to perform a bulk RNA-seq analysis using the OUHC supercomputer. This experience has allowed you to become familiar not only with this specific type of analysis but also with important supporting skills such as working with bioinformatics software, understanding common bioinformatics file formats, and navigating the command line terminal. The purpose of this course project is to give you an opportunity to apply what you have learned over the past few weeks using either your own dataset or a dataset assigned to you.\n\n\nProject Guidelines\nBelow is the general outline of the steps you need to take for this project:\n\nImport data into your OSCER workspace, it can be your own, or we can assign data to you\nPerform a quality check on your fastq files\nAlign your fastq read to the reference genome for your dataset using HISAT2\nProduce a count matrix using the program featureCounts and the GFF file of your reference genome\nPerform differential expression analysis using the R Bioconductor Package DeSeq2 and the count matrix you created in the previous steps\n\n\n\nSubmission\nYou will need to submit your presentation ahead of time on Canvas. Otherwise, everything else on the rubric you will need to cover in your presentation.\nPlease show the following during your presentation:\n\nAn organized OSCER workspace\nAn organized and annotated BASH script or scripts used to complete the project\nR Workspace used to complete the analysis with dedicated folders and well-named files\nA walkthrough of the Differential Expression Analysis Document with an explanation for each step\n\nComparing raw counts and normalized counts\nPrincipal Components Analysis\nCreation of DESeq2 Object using count matrix and sample metadata\nVolcano Plot of results\nHeatmap of results\n\nSummary of key findings from the analysis\n10 min limit, 5 slide limit"
   },
   {
     "objectID": "resources/r_resources.html",
@@ -348,41 +348,6 @@
     "title": "Programming in R for this Course",
     "section": "",
     "text": "tidyverse \nDeseq2\nggplot2 \npheatmap"
-  },
-  {
-    "objectID": "lectures/lecture_2_oscer_bash.html",
-    "href": "lectures/lecture_2_oscer_bash.html",
-    "title": "Working on OSCER and Using BASH",
-    "section": "",
-    "text": "Prerequisites\nPlease have the following ready before class:\n\nHave your OSCER credentials on hand\nBe able to access your OSCER account through Terminal or MobaXterm\n\nIf you are on a Windows machine, please make sure to have MobaXterm installed\n\n\n\n\nLearning objectives\nAt the end of this lesson you will:\n\nLearn to log into your OSCER account\nBe more familiar with using BASH and navigating OSCER through the terminal\nHave submitted your first SBATCH script\n\n\n\nLecture Slides"
-  },
-  {
-    "objectID": "lectures/lecture_2_oscer_bash.html#piping",
-    "href": "lectures/lecture_2_oscer_bash.html#piping",
-    "title": "Working on OSCER and Using BASH",
-    "section": "Piping",
-    "text": "Piping\nCMD1 SOME_FILE.txt | CMD2         # Structure\nls SOME_DIR | grep \"R1\"           # Example"
-  },
-  {
-    "objectID": "lectures/lecture_2_oscer_bash.html#standard-output",
-    "href": "lectures/lecture_2_oscer_bash.html#standard-output",
-    "title": "Working on OSCER and Using BASH",
-    "section": "Standard Output",
-    "text": "Standard Output\necho \"some string\"                # Print to screen\nCMD SOME_FILE.txt &gt; NEW_FILE.txt            # Overwrite file with output\nCMD SOME_FILE.txt &gt;&gt; ADD_TO_EXISTING.txt    # Take output and add output to existing content in file\nCMD SOME_FILE.txt 1&gt; stdout.txt           # Redirect the standard output to a file\nCMD SOME_FILE.txt 2&gt; stderror.txt        # Redirect the standard error output to a file"
-  },
-  {
-    "objectID": "lectures/lecture_2_oscer_bash.html#file-editing",
-    "href": "lectures/lecture_2_oscer_bash.html#file-editing",
-    "title": "Working on OSCER and Using BASH",
-    "section": "File Editing",
-    "text": "File Editing\nnano                    # Opens text editor to create new file\nnano file.txt            # Opens file in text editor"
-  },
-  {
-    "objectID": "lectures/lecture_2_oscer_bash.html#pattern-searching",
-    "href": "lectures/lecture_2_oscer_bash.html#pattern-searching",
-    "title": "Working on OSCER and Using BASH",
-    "section": "Pattern Searching",
-    "text": "Pattern Searching\ngrep \"some-string\" SOME_FILE.txt    # Grabs lines in file that contain the string pattern"
   },
   {
     "objectID": "index.html#schedule",
@@ -410,7 +375,7 @@
     "href": "lectures/lecture_1_intro_data_science.html",
     "title": "Introduction to Data Science",
     "section": "",
-    "text": "Prerequisites\nPlease have the following ready before class:\n\nA confirmation email for your OSCER account\nHave your OSCER credentials on hand\nHave R and RStudio installed on your laptop\n\n\n\nLearning objectives\nAt the end of this lesson you will:\n\nTBD\nTBD\nTBD\n\n\n\nLecture Slides"
+    "text": "Prerequisites\nPlease have the following ready before class:\n\nA confirmation email for your OSCER account\nHave your OSCER credentials on hand\nHave MobaXterm installed if needed\nHave R and RStudio installed on your laptop\n\n\n\nLearning objectives\nAt the end of this lesson you will:\n\nBe introduced to the course structure, expectations, and workflow.\nGain a basic understanding of data science for biomedical applications and common data analysis techniques.\n\n\n\nLecture Slides"
   },
   {
     "objectID": "resources/resources_R.html#installing-r-and-rstudio",
@@ -469,13 +434,6 @@
     "text": "Lecture Slides"
   },
   {
-    "objectID": "lectures/lecture_3_bulk_rna_seq_1.html",
-    "href": "lectures/lecture_3_bulk_rna_seq_1.html",
-    "title": "Bulk RNA-Seq I",
-    "section": "",
-    "text": "Prerequisites\nPlease have the following ready before class:\n\nHave your OSCER credentials on hand\nBe able to access your OSCER account through Terminal or Mobaxterm\n\n\n\nLearning objectives\nAt the end of this lesson, you will:\n\nUnderstand the steps in the Bulk RNA-seq pipeline up to the creation of a count matrix\nBe familiar with submitting SBATCH scripts to SLURM\nHave a better understanding of several bioinformatics file types\n\n\n\nLecture Slides"
-  },
-  {
     "objectID": "resources/resource_oscer.html#logging-into-oscer-using-mobaxterm",
     "href": "resources/resource_oscer.html#logging-into-oscer-using-mobaxterm",
     "title": "What is OSCER?",
@@ -509,12 +467,5 @@
     "title": "What is OSCER?",
     "section": "Logging on through Terminal - MacOS and Linux",
     "text": "Logging on through Terminal - MacOS and Linux\nIf you have a Mac or Linux system, to log into OSCER, please have your username and password on hand. On your computer, open up the terminal application. Once on the terminal, please type in: ssh USERNAME@sooner.oscer.ou.edu\nAfterwards, it will prompt you to type in your password. Start typing it in. Do not worry if it does not appear on the screen when you are typing, it is normal. After you have typed it in, click your Enter key.\nIf you entered your credentials correctly, you will see a wall of text with OSCER info, and finally, at the end, a line indicating you are logged on to an OSCER login node: (base) [USER@sooner# ~]$\nAt the end of this process, you should be logged into a sooner login node on OSCER!"
-  },
-  {
-    "objectID": "lectures/lecture_2_oscer_bash.html#in-line-file-editor",
-    "href": "lectures/lecture_2_oscer_bash.html#in-line-file-editor",
-    "title": "Working on OSCER and Using BASH",
-    "section": "In Line File Editor",
-    "text": "In Line File Editor\nnano                    # Opens text editor to create new file\nnano file.txt            # Opens file in text editor"
   }
 ]

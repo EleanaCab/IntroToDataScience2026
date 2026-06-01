@@ -8,3 +8,13 @@
 archive_lectures
 .DS_store
 .RProj
+
+# Ignore PowerPoint presentations
+*.pptx
+*.ppt
+*.pptm
+
+# Ignore temporary Microsoft Office lock files
+~$*.pptx
+~$*.ppt
+~$*.pptm

@@ -3,7 +3,7 @@ title: "Bulk RNA-Seq I"
 author: 
   - name: Eleana Cabello
 date: 06/09/2026
-draft: False
+draft: True
 ---
 
 # Prerequisites
