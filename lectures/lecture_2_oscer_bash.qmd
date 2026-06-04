@@ -26,7 +26,7 @@ At the end of this lesson you will:
 
 ![](../slides/lecture2_oscer_bash.pdf){width=800px height=480px}
 
-::: {.callout-tip title="Exercise #1" appearance="simple" collapse=True}
+::: {.callout-tip collapse="true" title="Exercise #1" appearance="simple"}
 ```{.bash}
 #!/bin/bash
 #SBATCH --partition=normal
