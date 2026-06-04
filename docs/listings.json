@@ -19,7 +19,8 @@
   {
     "listing": "/lectures.html",
     "items": [
-      "/lectures/lecture_1_intro_data_science.html"
+      "/lectures/lecture_1_intro_data_science.html",
+      "/lectures/lecture_2_oscer_bash.html"
     ]
   }
 ]
