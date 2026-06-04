@@ -4,7 +4,7 @@
     "href": "lectures.html",
     "title": "Lectures",
     "section": "",
-    "text": "Date\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n06-02-2026\n\n\nIntroduction to Data Science\n\n\nCourtney Montgomery\n\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n06-02-2026\n\n\nIntroduction to Data Science\n\n\nCourtney Montgomery\n\n\n\n\n\n\n06-05-2026\n\n\nWorking on OSCER and Using BASH\n\n\nEleana Cabello\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lectures/lecture_1_intro_data_science.html",
@@ -12,6 +12,13 @@
     "title": "Introduction to Data Science",
     "section": "",
     "text": "Prerequisites\nPlease have the following ready before class:\n\nA confirmation email for your OSCER account\nHave your OSCER credentials on hand\nHave MobaXterm installed if needed\nHave R and RStudio installed on your laptop\n\n\n\nLearning objectives\nAt the end of this lesson you will:\n\nBe introduced to the course structure, expectations, and workflow.\nGain a basic understanding of data science for biomedical applications and common data analysis techniques.\n\n\n\nLecture Slides"
+  },
+  {
+    "objectID": "lectures/lecture_2_oscer_bash.html",
+    "href": "lectures/lecture_2_oscer_bash.html",
+    "title": "Working on OSCER and Using BASH",
+    "section": "",
+    "text": "Prerequisites\nPlease have the following ready before class:\n\nHave your OSCER credentials on hand\nBe able to access your OSCER account through Terminal or MobaXterm\n\nIf you are on a Windows machine, please make sure to have MobaXterm installed\n\n\n\n\nLearning objectives\nAt the end of this lesson you will:\n\nLearn to log into your OSCER account\nBe more familiar with using BASH and navigating OSCER through the terminal\nHave submitted your first SBATCH script\n\n\n\nLecture Slides\n\n\n\n\n\n\n\nTipExercise #1\n\n\n\n\n\n#!/bin/bash\n#SBATCH --partition=normal\n#SBATCH --ntasks=1\n#SBATCH --mem=1G\n#SBATCH --job-name=jobname\n#SBATCH --output=jobname_%J_%A_%a_stdout.txt\n#SBATCH --error=jobname_%J_%A_%a_stderr.txt\n#SBATCH --time=0:10:00\n#SBATCH --mail-user=EMAIL@ou.edu\n#SBATCH --mail-type=ALL\n#SBATCH --chdir=/scratch/USER/lecture_2\n\n#==============================================================================\n# BASH Strict mode (i.e. \"fail fast\" to reduce hard-to-find bugs)\nset -e          # EXIT the script if any command returns non-zero exit status.\nset -E          # Make ERR trapping work inside functions too.\nset -u          # Variables must be pre-defined before using them.\nset -o pipefail  # If a pipe fails, returns the error code for the failed pipe\n                #  even if it isn't the last command in a series of pipes.\n#==============================================================================\n\necho \"Hello World!\" &gt; helloWorld.txt"
   },
   {
     "objectID": "project.html",
