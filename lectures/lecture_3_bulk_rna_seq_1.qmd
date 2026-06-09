@@ -3,7 +3,7 @@ title: "Bulk RNA-Seq I"
 author: 
   - name: Eleana Cabello
 date: 06/09/2026
-draft: True
+draft: False
 ---
 
 # Prerequisites
@@ -22,6 +22,36 @@ At the end of this lesson, you will:
 * Have a better understanding of several bioinformatics file types
 
 # Lecture Slides
+
+![](../slides/lecture3_rnaseq_1.pdf){width=800px height=480px}
+
+::: {.callout-tip collapse="true" title="Copy Lecture 3" appearance="simple"}
+```{.bash}
+#!/bin/bash
+#SBATCH --partition=normal
+#SBATCH --n-tasks=1
+#SBATCH --mem=10GB
+#SBATCH --time=01:00:00
+#SBATCH --job-name=copy_lecture3
+#SBATCH --output=copy_lecture3_stdout.txt
+#SBATCH --error=copy_lecture3_stderr.txt
+#SBATCH --mail-user=EMAIL@ou.edu
+#SBATCH --mail-type=ALL
+#SBATCH --chdir=/scratch/USER/
+
+#===============================================================================
+# BASH Strict mode (i.e. "nag and quit" instead of ignoring some common errors)
+set -e # EXIT the script if any command returns non-zero exit status.
+set -E # Make ERR trapping work inside functions too.
+set -u # Variables must be pre-defined before using them.
+set -o pipefail # If a pipe fails, returns the error code for the failed pipe
+# even if it isn't the last command in a series of pipes.
+#===============================================================================
+
+cp -r /scratch/elec/lecture_3 .
+
+```
+:::
 
 
 
