@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://EleanaCab.github.io/IntroToDataScience2026/lectures.html</loc>
-    <lastmod>2026-06-05T03:07:18.009Z</lastmod>
+    <lastmod>2026-06-09T13:12:39.749Z</lastmod>
   </url>
   <url>
     <loc>https://EleanaCab.github.io/IntroToDataScience2026/lectures/lecture_1_intro_data_science.html</loc>
-    <lastmod>2026-06-05T03:07:18.009Z</lastmod>
+    <lastmod>2026-06-09T13:12:39.749Z</lastmod>
   </url>
   <url>
     <loc>https://EleanaCab.github.io/IntroToDataScience2026/lectures/lecture_2_oscer_bash.html</loc>
-    <lastmod>2026-06-05T03:07:18.010Z</lastmod>
+    <lastmod>2026-06-09T13:12:39.750Z</lastmod>
   </url>
   <url>
     <loc>https://EleanaCab.github.io/IntroToDataScience2026/project.html</loc>
-    <lastmod>2026-06-05T03:07:18.010Z</lastmod>
+    <lastmod>2026-06-09T13:12:39.750Z</lastmod>
   </url>
   <url>
     <loc>https://EleanaCab.github.io/IntroToDataScience2026/resources/resource_oscer.html</loc>
-    <lastmod>2026-06-05T03:07:18.010Z</lastmod>
+    <lastmod>2026-06-09T13:12:39.750Z</lastmod>
   </url>
   <url>
     <loc>https://EleanaCab.github.io/IntroToDataScience2026/resources/resources_R.html</loc>
-    <lastmod>2026-06-05T03:07:18.024Z</lastmod>
+    <lastmod>2026-06-09T13:12:39.765Z</lastmod>
   </url>
   <url>
     <loc>https://EleanaCab.github.io/IntroToDataScience2026/resources.html</loc>
-    <lastmod>2026-06-05T03:07:18.010Z</lastmod>
+    <lastmod>2026-06-09T13:12:39.750Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EleanaCab.github.io/IntroToDataScience2026/lectures/lecture_3_bulk_rna_seq_1.html</loc>
+    <lastmod>2026-06-09T13:12:39.750Z</lastmod>
   </url>
   <url>
     <loc>https://EleanaCab.github.io/IntroToDataScience2026/index.html</loc>
-    <lastmod>2026-06-05T03:07:18.009Z</lastmod>
+    <lastmod>2026-06-09T13:12:39.749Z</lastmod>
   </url>
 </urlset>
