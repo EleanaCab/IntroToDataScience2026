@@ -1,11 +1,27 @@
 ---
 title: "Bulk RNA-Seq II"
 author: 
-  - name: TBD
+  - name: Chris Dunn
 date: 06/12/2026
-draft: True
+draft: False
 ---
 
+# Prerequisites
 
+Please have the following ready before class:
 
+* R and R Studio installed on your laptop
+* Have the INBRE_2026 folder shared by Chris Dunn downloaded on your laptop
+
+# Learning objectives
+
+At the end of this lesson, you will:
+
+* Import a count matrix into RStudio
+* Perform differential expression analysis and understand the results
+* Create effective visualizations to interpret and present results
+
+# Lecture Slides
+
+![](../slides/lecture4_de_analysis.pdf){width=800px height=480px}
 
