@@ -37,7 +37,7 @@ Welcome! This will be the place to refer to for this class. All lectures, assign
     </tr>
     <tr>
     <td>06/12</td>
-    <td><a href=https://eleanacab.github.io/IntroToDataScience2026/lectures/lecture_4_bulk_rna_seq_2.html> <b> Bulk RNA-Seq II</b> -  TBD </a></td>
+    <td><a href=https://eleanacab.github.io/IntroToDataScience2026/lectures/lecture_4_bulk_rna_seq_2.html> <b> Bulk RNA-Seq II</b> -  Chris Dunn </a></td>
     </tr>
     <tr>
     <td>06/16</td>
