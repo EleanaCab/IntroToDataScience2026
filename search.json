@@ -4,7 +4,14 @@
     "href": "lectures.html",
     "title": "Lectures",
     "section": "",
-    "text": "Date\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n06-02-2026\n\n\nIntroduction to Data Science\n\n\nCourtney Montgomery\n\n\n\n\n\n\n06-05-2026\n\n\nWorking on OSCER and Using BASH\n\n\nEleana Cabello\n\n\n\n\n\n\n06-09-2026\n\n\nBulk RNA-Seq I\n\n\nEleana Cabello\n\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n06-02-2026\n\n\nIntroduction to Data Science\n\n\nCourtney Montgomery\n\n\n\n\n\n\n06-05-2026\n\n\nWorking on OSCER and Using BASH\n\n\nEleana Cabello\n\n\n\n\n\n\n06-09-2026\n\n\nBulk RNA-Seq I\n\n\nEleana Cabello\n\n\n\n\n\n\n06-12-2026\n\n\nBulk RNA-Seq II\n\n\nChris Dunn\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "lectures/lecture_4_bulk_rna_seq_2.html",
+    "href": "lectures/lecture_4_bulk_rna_seq_2.html",
+    "title": "Bulk RNA-Seq II",
+    "section": "",
+    "text": "Prerequisites\nPlease have the following ready before class:\n\nR and R Studio installed on your laptop\nHave the INBRE_2026 folder shared by Chris Dunn downloaded on your laptop\n\n\n\nLearning objectives\nAt the end of this lesson, you will:\n\nImport a count matrix into RStudio\nPerform differential expression analysis and understand the results\nCreate effective visualizations to interpret and present results\n\n\n\nLecture Slides"
   },
   {
     "objectID": "lectures/lecture_1_intro_data_science.html",
