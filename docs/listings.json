@@ -3,7 +3,8 @@
     "listing": "/resources.html",
     "items": [
       "/resources/resource_oscer.html",
-      "/resources/resources_R.html"
+      "/resources/resources_R.html",
+      "/resources/resource_flowchart.html"
     ]
   },
   {
@@ -22,7 +23,8 @@
       "/lectures/lecture_1_intro_data_science.html",
       "/lectures/lecture_2_oscer_bash.html",
       "/lectures/lecture_3_bulk_rna_seq_1.html",
-      "/lectures/lecture_4_bulk_rna_seq_2.html"
+      "/lectures/lecture_4_bulk_rna_seq_2.html",
+      "/lectures/lecture_5_pathway_analysis.html"
     ]
   }
 ]

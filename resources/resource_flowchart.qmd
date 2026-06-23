@@ -1,0 +1,6 @@
+---
+title: "Bulk RNA-seq Flowchart"
+date: 06/23/2026
+---
+
+![](resource_flowchart_images/bulk_rna_seq_flowchart.pdf){width=800px height=480px}
