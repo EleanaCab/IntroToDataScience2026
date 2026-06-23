@@ -95,7 +95,7 @@
     "href": "lectures.html",
     "title": "Lectures",
     "section": "",
-    "text": "Date\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n06-02-2026\n\n\nIntroduction to Data Science\n\n\nCourtney Montgomery\n\n\n\n\n\n\n06-05-2026\n\n\nWorking on OSCER and Using BASH\n\n\nEleana Cabello\n\n\n\n\n\n\n06-09-2026\n\n\nBulk RNA-Seq I\n\n\nEleana Cabello\n\n\n\n\n\n\n06-12-2026\n\n\nBulk RNA-Seq II\n\n\nChris Dunn\n\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n06-02-2026\n\n\nIntroduction to Data Science\n\n\nCourtney Montgomery\n\n\n\n\n\n\n06-05-2026\n\n\nWorking on OSCER and Using BASH\n\n\nEleana Cabello\n\n\n\n\n\n\n06-09-2026\n\n\nBulk RNA-Seq I\n\n\nEleana Cabello\n\n\n\n\n\n\n06-12-2026\n\n\nBulk RNA-Seq II\n\n\nChris Dunn\n\n\n\n\n\n\n06-23-2026\n\n\nFurther Downstream Analysis\n\n\nTBD \n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lectures/lecture_3_bulk_rna_seq_1.html",
@@ -110,5 +110,12 @@
     "title": "Working on OSCER and Using BASH",
     "section": "",
     "text": "Prerequisites\nPlease have the following ready before class:\n\nHave your OSCER credentials on hand\nBe able to access your OSCER account through Terminal or MobaXterm\n\nIf you are on a Windows machine, please make sure to have MobaXterm installed\n\n\n\n\nLearning objectives\nAt the end of this lesson you will:\n\nLearn to log into your OSCER account\nBe more familiar with using BASH and navigating OSCER through the terminal\nHave submitted your first SBATCH script\n\n\n\nLecture Slides\n\n\n\n\n\n\n\nTipExercise #1\n\n\n\n\n\n#!/bin/bash\n#SBATCH --partition=normal\n#SBATCH --ntasks=1\n#SBATCH --mem=1G\n#SBATCH --job-name=jobname\n#SBATCH --output=jobname_%J_%A_%a_stdout.txt\n#SBATCH --error=jobname_%J_%A_%a_stderr.txt\n#SBATCH --time=0:10:00\n#SBATCH --mail-user=EMAIL@ou.edu\n#SBATCH --mail-type=ALL\n#SBATCH --chdir=/scratch/USER/lecture_2\n\n#==============================================================================\n# BASH Strict mode (i.e. \"fail fast\" to reduce hard-to-find bugs)\nset -e          # EXIT the script if any command returns non-zero exit status.\nset -E          # Make ERR trapping work inside functions too.\nset -u          # Variables must be pre-defined before using them.\nset -o pipefail  # If a pipe fails, returns the error code for the failed pipe\n                #  even if it isn't the last command in a series of pipes.\n#==============================================================================\n\necho \"Hello World!\" &gt; helloWorld.txt"
+  },
+  {
+    "objectID": "lectures/lecture_5_pathway_analysis.html",
+    "href": "lectures/lecture_5_pathway_analysis.html",
+    "title": "Further Downstream Analysis",
+    "section": "",
+    "text": "Learning objectives\nAt the end of this lesson, you will:\n\nLearn common downstream analyses of DESeq2 differential expression results.\nUse ShinyGO and clusterProfiler to run pathway enrichment analyses.\nUnderstand the basics of Ingenuity Pathway Analysis (IPA) and how to interpret outputs.\n\n\n\nLecture Slides"
   }
 ]
