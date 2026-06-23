@@ -116,6 +116,6 @@
     "href": "lectures/lecture_5_pathway_analysis.html",
     "title": "Further Downstream Analysis",
     "section": "",
-    "text": "Learning objectives\nAt the end of this lesson, you will:\n\nLearn common downstream analyses of DESeq2 differential expression results.\nUse ShinyGO and clusterProfiler to run pathway enrichment analyses.\nUnderstand the basics of Ingenuity Pathway Analysis (IPA) and how to interpret outputs.\n\n\n\nLecture Slides"
+    "text": "Learning objectives\nAt the end of this lesson, you will:\n\nLearn common downstream analyses of DESeq2 differential expression results.\nUse ShinyGO and clusterProfiler to run pathway enrichment analyses.\nUnderstand the basics of Ingenuity Pathway Analysis (IPA) and how to interpret outputs.\n\n\n\nLecture Slides\n\nclusterProfiler Link: https://guangchuangyu.github.io/software/clusterProfiler/"
   }
 ]
